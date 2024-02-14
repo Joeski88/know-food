@@ -2,61 +2,61 @@ const questions = [
     {
         question: "Which one of these is a dragon fruit? ",
         answers: [
-            { text: "a", correct: false},
-            { text: "b", correct: true},
-            { text: "c", correct: false},
-            { text: "d", correct: false},
-            { text: "e", correct: false},
+            { text: "Passion fruit", correct: false},
+            { text: "Dragon fruit", correct: true},
+            { text: "Jack fruit", correct: false},
+            { text: "Rambutan", correct: false},
+            { text: "kiwi fruit", correct: false},
         ]
     },
     {
         question: "Which of these is scotch bonnet?",
         answers: [
-            { text: "a", correct: false},
-            { text: "b", correct: true},
-            { text: "c", correct: false},
-            { text: "d", correct: false},
-            { text: "e", correct: false},
+            { text: "Padron pepper", correct: false},
+            { text: "Scotch bonnet", correct: true},
+            { text: "Romano pepper", correct: false},
+            { text: "Bell pepper", correct: false},
+            { text: "Black pepper", correct: false},
         ]
     },
     {
         question: "Which of these is all spice?",
         answers: [
-            { text: "a", correct: false},
-            { text: "b", correct: true},
-            { text: "c", correct: false},
-            { text: "d", correct: false},
-            { text: "e", correct: false},
+            { text: "Juniper", correct: false},
+            { text: "Clove", correct: false},
+            { text: "Star Anise", correct: false},
+            { text: "All spice", correct: true},
+            { text: "Cinnamon", correct: false},
         ]
     },
     {
         question: "Which of these is mafalde?",
         answers: [
-            { text: "a", correct: false},
-            { text: "b", correct: true},
-            { text: "c", correct: false},
-            { text: "d", correct: false},
-            { text: "e", correct: false},
+            { text: "Malfade", correct: true},
+            { text: "Paccheri", correct: false},
+            { text: "Penne", correct: false},
+            { text: "Ravioli", correct: false},
+            { text: "Tortellini", correct: false},
         ]
     },
     {
         question: "What is cornish yarg wrapped in?",
         answers: [
-            { text: "a", correct: false},
-            { text: "b", correct: true},
-            { text: "c", correct: false},
-            { text: "d", correct: false},
-            { text: "e", correct: false},
+            { text: "Muslin Cloth", correct: false},
+            { text: "Dock Leaf", correct: false},
+            { text: "Hemp leaf", correct: false},
+            { text: "Stinging Nettles", correct: true},
+            { text: "Bin Bag", correct: false},
         ]
     }, 
     {
         question: "Which one of these cut’s of meat is named ‘tomahawk’?",
         answers: [
-            { text: "a", correct: false},
-            { text: "b", correct: true},
-            { text: "c", correct: false},
-            { text: "d", correct: false},
-            { text: "e", correct: false},
+            { text: "Pork Belly", correct: false},
+            { text: "Barnsley Chop", correct: false},
+            { text: "Osso Buco", correct: false},
+            { text: "T-Bone", correct: false},
+            { text: "Tomahawk", correct: true},
         ]
     },
     {
@@ -161,7 +161,7 @@ function selectAnswer(e){
 
 function showScore(){
     resetState();
-    questionElement.innerHTML = 'you scored ${score} out of ${questions.length}!';
+    questionElement.innerHTML = `you scored ${score} out of ${questions.length}!`;
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block";
 }

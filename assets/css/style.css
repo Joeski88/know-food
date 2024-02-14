@@ -5,11 +5,24 @@
     box-sizing: border-box;
 }
 
+/*quiz entry button styling*/
+
+.button {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    box-shadow: 4px;
+}
+div {
+    height: 100%;
+}
 
   
 /*basic color scheme*/
 body {
     background: rgb(239, 183, 115);
+    height: 100vh;
 }
 
 /*quiz styling*/
@@ -50,7 +63,7 @@ body {
     margin: 10px 0;
     text-align: left;
     border-radius: 4px;
-    cursor: pointer;
+    cursor: crosshair;
     transition: all 0.3s;
 }
 .btn:hover:not([disabled]){
@@ -69,7 +82,7 @@ body {
     padding: 10px;
     margin: 20px auto 0;
     border-radius: 4px;
-    cursor: pointer;
+    cursor: crosshair;
     display: none;
 }
 
@@ -79,7 +92,4 @@ body {
 
 .incorrect{
     background: navy;
-}
-button {
-    color: blue;
 }
