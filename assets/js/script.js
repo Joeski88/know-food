@@ -62,42 +62,42 @@ const questions = [
     {
         question: "Which one of these flowers does saffron come from?",
         answers: [
-            { text: "a", correct: false},
-            { text: "b", correct: true},
-            { text: "c", correct: false},
-            { text: "d", correct: false},
-            { text: "e", correct: false},
+            { text: "Allum", correct: false},
+            { text: "Knapweed", correct: false},
+            { text: "Poppy", correct: false},
+            { text: "Saffron", correct: true},
+            { text: "Spider Lilly", correct: false},
         ]
     },
    
     {
         question: "Which bean is miso made from?",
         answers: [
-            { text: "a", correct: false},
-            { text: "b", correct: true},
-            { text: "c", correct: false},
-            { text: "d", correct: false},
-            { text: "e", correct: false},
+            { text: "Borlotti Bean", correct: false},
+            { text: "Broad Bean", correct: false},
+            { text: "Jelly Bean", correct: false},
+            { text: "Kidney Bean", correct: false},
+            { text: "Soya Bean", correct: true},
         ]
     },
     {
         question: "Which of these is a ‘tuber’?",
         answers: [
-            { text: "a", correct: false},
-            { text: "b", correct: true},
-            { text: "c", correct: false},
-            { text: "d", correct: false},
-            { text: "e", correct: false},
+            { text: "Aubergine", correct: false},
+            { text: "Corn", correct: false},
+            { text: "Cucumber", correct: false},
+            { text: "Potato", correct: true},
+            { text: "Romanesco Cauliflower", correct: false},
         ]
     },
     {
         question: "Which of these is a langoustine?",
         answers: [
-            { text: "a", correct: false},
-            { text: "b", correct: true},
-            { text: "c", correct: false},
-            { text: "d", correct: false},
-            { text: "e", correct: false},
+            { text: "Crab", correct: false},
+            { text: "Crayfish", correct: false},
+            { text: "Tiger Prawn", correct: false},
+            { text: "Langoustine", correct: true},
+            { text: "Spiney Lobster", correct: false},
         ]
     },
 ];
