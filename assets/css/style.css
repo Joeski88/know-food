@@ -7,22 +7,38 @@
 
 /*quiz entry button styling*/
 
-.button {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    box-shadow: 4px;
-}
-div {
-    height: 100%;
-}
+/*center the quiz entry button*/
 
-  
+.button {
+        position: absolute; 
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        z-index: 2; 
+        background-color: #063b0d; 
+        color: #fff; 
+        border: 2px;
+        border-color: yellow; 
+        padding: 10px 20px; 
+        cursor: pointer;
+        border-radius: 12px; 
+      }
+
 /*basic color scheme*/
 body {
     background: rgb(239, 183, 115);
     height: 100vh;
+
+}
+
+/*background image*/
+img {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  z-index: 1;
 }
 
 /*quiz styling*/
