@@ -4,7 +4,7 @@
 
 A fun, light hearted educational food quiz for everyone.
 
-<h2 align="center"><img src="assets/images/menu-promo-daughter-hugging-dad.jpeg"></h2>
+<h2 align="center"><img src="assets/images/dragonfruit.jpeg"></h2>
 
 ## User Experience (UX)
 
@@ -13,40 +13,38 @@ A fun, light hearted educational food quiz for everyone.
     -   #### First Time Visitor Goals
 
         1. As a First Time Visitor, I want to easily understand the main purpose of the site and enjoy doing the quiz.
-        2. As a First Time Visitor, I want to be able to easily navigate through the quiz, 
-        3. As a First Time Visitor, I want to look for testimonials to understand what their users think of them and see if they are trusted. I also want to locate their social media links to see their followings on social media to determine how trusted and known they are.
+        2. As a First Time Visitor, I want to be able to easily navigate through the quiz, whilest enjoying it and maybe learning something new.
+        3. As a First Time Visitor, I want the quiz to be aethetically pleasing and enjoyable to take part in.
 
     -   #### Returning Visitor Goals
 
-        1. As a Returning Visitor, I want to find information and help on being a single dad. 
-        2. As a Returning Visitor, I want to find the best way to get in contact with the organisation with any questions I may have.
-        3. As a Returning Visitor, I want to find community links.
+        1. As a Returning Visitor, I want to beat my previous score.  
+        2. As a Returning Visitor, I want to check if new questions have been added.
+        3. As a Returning Visitor, I want to check the leaderboard and see my position.
 
     -   #### Frequent User Goals
-        1. As a Frequent User, I want to check to see if there are any newly added life hacks, inspriational quotes and activities to do.
-        2. As a Frequent User, I want to check to see if there are any new replies to support plea's.
-        3. As a Frequent User, I want to see if any more financial information has been added and to contact the support groups involved.
+        1. As a Frequent User, I want to see if the images and potential answers have been changed to add another level to the quiz.
 
 -   ### Design
     -   #### Colour Scheme
-        -   The three main colours used are black, red, and dark grey. I chose these to give the site a striking view and maske the text easy to see.
+        -   The three main colours used are ????. I chose these to give the site a striking view and maske the text easy to see.
     -   #### Typography
-        -   Vina sans, long cang and winx made for display are the fonts used in this page. Winx made for display font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. I like it as it is a clean font and is suitable for all types of content. Vina sans is used in the website name and nav bar options as it is bold, unique and in theory, remembered. Long cang is used for small pieces of text to add a bit of flair and relaxed kind of vibe. 
+        -  ????????? Vina sans, long cang and winx made for display are the fonts used in this page. Winx made for display font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. I like it as it is a clean font and is suitable for all types of content. Vina sans is used in the website name and nav bar options as it is bold, unique and in theory, remembered. Long cang is used for small pieces of text to add a bit of flair and relaxed kind of vibe. 
     -   #### Imagery
-        -   Ive tried to use positive imagery throughout the site to make it visually attractive and to keep the visitor engaged. i used a scrolling gallery to really hammer home the beauty of being a single dad.
+        -   ???????Ive tried to use positive imagery throughout the site to make it visually attractive and to keep the visitor engaged. i used a scrolling gallery to really hammer home the beauty of being a single dad.
 
 
 ## Features
 
 -   Responsive on all device sizes.
 
--   Scrolling Gallery on home page.
+-   Engaging and fun quiz for all audiences.
 
--   Motivational Youtube videos from fellow single dads.
+-   Score totalling with javascript code.
 
--   Hacks and activities for dads and kids.
+-   Leaderboard to see your score compared to others
 
--   submission form in the style of an "agony aunt".
+-   
 
 ## Technologies Used
 
@@ -54,23 +52,26 @@ A fun, light hearted educational food quiz for everyone.
 
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+-   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 ### Frameworks, Libraries & Programs Used
 
 1. [Hover.css:](https://ianlunn.github.io/Hover/)
     - Hover.css was used on the Social Media icons in the footer to add the float transition while being hovered over.
-1. [Google Fonts:](https://fonts.google.com/)
+2. [Google Fonts:](https://fonts.google.com/)
     - Google fonts were used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
-1. [Font Awesome:](https://fontawesome.com/)
+3. [Font Awesome:](https://fontawesome.com/)
     - Font Awesome was used on all pages throughout the website to add icons for social media tags/links.
-1. [Git](https://git-scm.com/)
+4. [Git](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
-1. [GitHub:](https://github.com/)
+5. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
-1. [VScode:] (https://code.visualstudio.com/) 
-    - Used as my IDE as struggled to use codeanywhere.
-1. [Favicon:](https://favicon.io/) 
+6. [VScode:] (https://code.visualstudio.com/) 
+    - Used as my IDE initially as struggled to use codeanywhere. Changed shortly after starting to gitpod.
+7. [Favicon:](https://favicon.io/) 
     - Used to download favicon for each page.
+8. [GitPod] (https://gitpod.io/workspaces)
+    - Moved to gitpod shortly after starting project to use as my main IDE.
 
 
 ## Testing

@@ -6,8 +6,8 @@ const questions = [{
                 text: "Passion fruit",
                 correct: false
             },
-            {
-                text: "Dragon fruit",
+            {   
+                image: "/images/dragonfruit.jpg",
                 correct: true
             },
             {
