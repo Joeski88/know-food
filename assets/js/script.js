@@ -1,4 +1,4 @@
-/*quiz questions and answers*/
+ /*quiz questions and answers*/
 
 const questions = [{
         question: "Which one of these is a dragon fruit? ",

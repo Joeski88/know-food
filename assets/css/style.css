@@ -10,19 +10,19 @@
 /*center the quiz entry button*/
 
 .button {
-        position: absolute; 
-        top: 50%; 
-        left: 50%; 
-        transform: translate(-50%, -50%); 
-        z-index: 2; 
-        background-color: #063b0d; 
-        color: #fff; 
-        border: 2px;
-        border-color: yellow; 
-        padding: 10px 20px; 
-        cursor: pointer;
-        border-radius: 12px; 
-      }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: #063b0d;
+    color: #fff;
+    border: 2px;
+    border-color: yellow;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 12px;
+}
 
 /*basic color scheme*/
 body {
@@ -32,13 +32,13 @@ body {
 }
 
 /*background image*/
+
 img {
-  height: 100%;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto;
-  z-index: 1;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-style: none;
 }
 
 /*quiz styling*/
@@ -46,9 +46,19 @@ img {
     background: white;
     width: 90%;
     max-width: 600px;
-    margin: 100px auto 0;
-    border-radius: 10px;
-    padding: 30px;
+    /* styling for background picture*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: #ffffff;
+    color: #fff;
+    border: 2px;
+    border-color: yellow;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 12px
 }
 
 .app h1 {
@@ -82,14 +92,17 @@ img {
     cursor: crosshair;
     transition: all 0.3s;
 }
-.btn:hover:not([disabled]){
+
+.btn:hover:not([disabled]) {
     background: #222;
     color: #fff;
 }
-.btn:disabled{
+
+.btn:disabled {
     cursor: no-drop;
 }
-#next-btn{
+
+#next-btn {
     background: #001e4d;
     color: #fff;
     font-weight: 500;
@@ -102,10 +115,27 @@ img {
     display: none;
 }
 
-.correct{
+.correct {
     background: red;
 }
 
-.incorrect{
+.incorrect {
     background: navy;
+}
+
+/*media queries*/
+
+
+
+@media screen and (min-width: 768px) {
+.image1 {
+    display: none;
+}
+.image2  {
+height: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+border-bottom-style: none;
+}
 }
