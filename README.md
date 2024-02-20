@@ -44,8 +44,6 @@ A fun, light hearted educational food quiz for everyone.
 
 -   Leaderboard to see your score compared to others
 
--   
-
 ## Technologies Used
 
 ### Languages Used

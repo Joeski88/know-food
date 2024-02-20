@@ -27,26 +27,21 @@
 /*basic color scheme*/
 body {
     background: rgb(239, 183, 115);
-    height: 100vh;
-
 }
 
 /*background image*/
 
-img {
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-bottom-style: none;
-}
 
-/*quiz styling*/
+
+    /*quiz styling*/
+
 .app {
     background: white;
     width: 90%;
     max-width: 600px;
+
     /* styling for background picture*/
+
     position: absolute;
     top: 50%;
     left: 50%;
@@ -125,17 +120,28 @@ img {
 
 /*media queries*/
 
+@media screen and (max-width: 765px) {
+    .image1 {
+        width: 100%;
+        background-position: center;
+        background-repeat: repeat;
+        background-size: cover;
+        border-bottom-style: none;
+    }
 
+    .button {
+        position: absolute;
+        
+    }
+}
 
 @media screen and (min-width: 768px) {
-.image1 {
-    display: none;
-}
-.image2  {
-height: 100%;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-border-bottom-style: none;
-}
+
+    .image1 {
+        width: 100%;
+        background-position: center;
+        background-repeat: repeat;
+        background-size: cover;
+        border-bottom-style: none;
+    }
 }
