@@ -22,16 +22,23 @@
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 12px;
+    opacity: 0.5;
 }
 
 /*basic color scheme*/
 body {
     background: rgb(239, 183, 115);
+    height: 100vh;
 }
 
 /*background image*/
 
-
+img {
+    background-image: url(../images/portraitbackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
 
     /*quiz styling*/
 
@@ -39,11 +46,12 @@ body {
     background: white;
     width: 90%;
     max-width: 600px;
+    max-height: 700px;
 
     /* styling for background picture*/
 
     position: absolute;
-    top: 50%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -97,6 +105,10 @@ body {
     cursor: no-drop;
 }
 
+#answer-buttons {
+    max-width: 300px;
+}
+
 #next-btn {
     background: #001e4d;
     color: #fff;
@@ -111,11 +123,11 @@ body {
 }
 
 .correct {
-    background: red;
+    background: rgb(0, 255, 0);
 }
 
 .incorrect {
-    background: navy;
+    background: rgb(255, 0, 0);
 }
 
 /*media queries*/
@@ -127,6 +139,7 @@ body {
         background-repeat: repeat;
         background-size: cover;
         border-bottom-style: none;
+        max-height: 1000px;
     }
 
     .button {
@@ -143,5 +156,6 @@ body {
         background-repeat: repeat;
         background-size: cover;
         border-bottom-style: none;
+        min-height: 2000px;
     }
 }

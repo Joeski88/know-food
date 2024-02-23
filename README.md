@@ -78,88 +78,75 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 -   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
 
-<img src="assets/images/screenshots4readme/index.htmldebug.jpg"><img src="assets/images/screenshots4readme/supportpagepass.jpg"><img src="assets/images/screenshots4readme/tipsvalidation.jpg"><img src="assets/images/screenshots4readme/thankyoupagevalidatorpass.jpg"><img src="assets/images/screenshots4readme/tipsvalidationlast.jpg">
+<img src="assets/images/.jpg"><img src="assets/images/.jpg"><img src="assets/images/.jpg"><img src="assets/images/.jpg"><img src="assets/images/.jpg">
 
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) 
 
-<img src="assets/images/screenshots4readme/cssvalidatorpass.jpg">
+<img src="assets/images/">
 
 ### Testing User Stories from User Experience (UX) Section
 
 -   #### First Time Visitor Goals
 
-    1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the organisation.
+    1. As a First Time Visitor, I want to easily understand the main purpose of the site.
 
-        1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. Underneath there is videos and pictures to emphasise the reason beind the website.
-        2. The main points are made immediately with short but intense you tube videos, and positive heartwarming pictures.
-        3. The user has several options. take in all the content on the home page to add a feel good factor. the next option is to open the tips and hacks page. in here is content to educate inform and promote postive thought. and the third choice is to submit a form in the support page. this goes directy to the admin who can respond directly and aid in support.
+        1. Upon entering the site, users are asked if they "know food?" and will need gto click the button to start the quiz.
+        2. The main quiz is clearly layed out and obviously displayed for practicallity for the user. 
+        3. The questions are clearly displayed, and answers are picture buttons. the answer highlights either, green for correct or red for incorrect. 
+        4. The questions are randomised from a choice of 15 questions, and the quiz is scored out of 10.
+        5. At the end of the quiz, the user is given their final total score, and given an option to submit their score to the score board.
 
-    2. As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content.
+    2. As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to complete the quiz easily.
 
-        1. The site has been designed to be fluid and never to entrap the user. At the top of each page there is a clean navigation bar, each link describes what the page they will navigate too clearly.
-        2. The navbar is always available at the top of the page to navigate to where they want to get to.
-        3. On the Contact Us Page, after a form response is submitted, you are redirected to a thank you page just to aknowledge the form has been recieved.
+        1. The button functions are simple and straight forward, and enable the user to easily finish the quiz without any issues.
+        2. The pictures will be easily seen, and all (almost) the same size. 
+        3. Your score total will be displayed at the end of the quiz autimatically.
 
-    3. As a First Time Visitor, I want to look for testimonials to understand what their users think of them and see if they are trusted. I also want to locate their social media links to see their following on social media to determine how trusted and known they are.
-        1. The headlines on the home page are clear and consice and should allow the visitor to fully understand the point of the site.
-        2. The user will need to scroll to the bottom of any page on the site to locate social media links in the footer.
-        3. At the bottom of the Support page, the user is told underneath the form, that alternatively they can contact the organisation on social media which highlights the links to them.
+    3. As a First Time Visitor, I want to take part in a fun, educational and informative food quiz. 
+        1. The quiz is a fun & informative way to pass some spare time. 
+        2. The user will be greeted with colourful images, some fun & silly answers that will hopefully make people smile.
 
 -   #### Returning Visitor Goals
 
-    1. As a Returning Visitor, I want to find information and help on being a single dad. 
+    1. As a Returning Visitor, I want to have the opportunity to beat my score. 
 
-        1. These are clearly shown in the content tabs in page 2. any help and support is clearly labelled and ordered.
-        2. This content would be refreshed and recycled regularly.
+        1. The quiz is abled to be played over and over again. There is a button at the end of the quiz to "play again" which ensures the user is sent to the start of the quiz.
 
-    2. As a Returning Visitor, I want to find the best way to get in contact with the organisation with any questions I may have.
-
-        1. The navigation bar clearly highlights the "Support" Page. this shows a form for the visitor to fill out and send to us.
-        2. The footer contains links to the organisations Facebook, Twitter and Instagram page as well as the organization's email.
-        3. In the "tips & hacks" page, there is a tab that reveals the best support groups around for the community. the links are usable and will redirect them to the individual page.
+    2. As a Returning Visitor, I want to check if new questions have been added.
+        
+        1.  This content would be refreshed and recycled regularly. With new quiz questions, and new and changing pictures for existing questions.
         
 
-    3. As a Returning Visitor, I want to find the Facebook Group link so that I can join and interact with others in the community.
-        1. The Facebook Page can be found at the footer of every page and will open a new tab for the user and more information can be found on the Facebook page. In there they can decide if they want to join the group.
-      
+    3. As a Returning Visitor, I want to check the leaderboard and see my position.
+        1.  At the end of the quiz the score is displayed clearly, there will be a score board for users to compare their scores to others.
 
 -   #### Frequent User Goals
 
-    1. As a Frequent User, I want to check to see if there are any newly added life hacks, inspriational quotes and activities to do.
+    1. As a Frequent User, I want to see if the images and potential answers have been changed to add another level to the quiz.
 
-        1. The user would already be comfortable with the website layout and can easily navigate their way through the site to find what they need.
-
-    2. As a Frequent User, I want to check to see if there are any new replies to support plea's.
-
-        1. The user would already be comfortable with the website layout and can easily click the support link.
-        2. The support replies will be done through email directly. 
-
-    3. As a Frequent User, I want to see if any more financial information has been added and to contact the support groups involved.
-        1. The financial content and advice will be frequently refreshed.
-        2. When the user submits a reply, they will automatically be added to an email list and be alerted by email when the content is updated.
+        1. The user would already be comfortable with the website layout and can easily navigate their way through the site to enojoy the quiz as many times as they want to.
+        2. Because the user is a frequent user, they will quickly see if there are new questions and pictures updated on the quiz. This will be a future feature, as i have only done a starting stock of 15 questions (45 different pictures).
 
 ### Further Testing
 
 -   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
 -   The website was viewed on a variety of devices such as Desktop, Laptop, iPhone13, iPhone14 & iPhone15 and galaxy fold.
 -   A large amount of testing was done to ensure that all pages were linking correctly.
--   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+-   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience       issues.
 
 ### Known Bugs
 
--   The nav bar sometimes goes out of position , to the left of the drop down menu. tried to fix. ongoing.
--   youtube videos dont follow the class size specifications. videos on home page do though.
--   Some screen sizes make a white bar appear on the right side of the home page. further testing needed.
--   On Safari browswer, 1 of the pictures doesnt show in the gallery, will look into why.
--   On iphone 10 screen the nav bar drop down menu is slightly out of position and the title is cut off a little bit, found during testing.
+-   JavaScript code not displaying total score at the end of quiz. FIXED!!! - was using " ' " instead of " ` ".
+-   Background image not covering whole screen. FIXED!!! - body was pushing image out of place.
+-   While trying to randomise the questions in javascript, the code randomised how many questions were asked and your score, rather than asking 10 random questions. NOT FIXED!!!
+-   Some questions dont fit onto the page and are cut off at the top. NOT FIXED!!!
+-  Favicon not appearing. FIXED!!! needed to clear cache and hard refresh.
 
 ### Future Features
 
--   Add a blog style page, where all visitors can comment on all posts from all members. 
--   Monthly money saving tips, constantly changing.
--   Add a monthly newsletter to auto send to all members, showing all new content. 
--   Fill the home page with more engaging content.
- 
+-   Continue adding picture questions to the pool of questions. continue randomising. 
+-   Add question categories for example; regional food, meat and fish butchary, vegetables, food seasons etc.
+-   Change the pictures of the existing questions to add some more variation and aid revisitability.
 
 ## Deployment
 
@@ -175,24 +162,24 @@ The site has been deployed to be hosted on GitHub pages. (please see the live li
 
 The project was deployed to GitHub Pages using the following steps...
 
-1. Log in to GitHub and locate the [GitHub Repository]( https://joeski88.github.io/firsttimeforeverything/)
+1. Log in to GitHub and locate the [GitHub Repository]( https://joeski88.github.io/know-food/)
 2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
 3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
 4. Under "Source", click the dropdown called "None" and select "Master Branch".
 5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published site [link]( https://joeski88.github.io/firsttimeforeverything/) in the "GitHub Pages" section.
+6. Scroll back down through the page to locate the now published site [link]( https://joeski88.github.io/know-food/) in the "GitHub Pages" section.
 
 ### Forking the GitHub Repository
 
 By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/Joeski88/firsttimeforeverything.git)
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/Joeski88/know-food.git)
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. You should now have a copy of the original repository in your GitHub account.
 
 ### Making a Local Clone
 
-1. Log in to GitHub and locate the [GitHub Repository] (https://github.com/Joeski88/firsttimeforeverything.git)
+1. Log in to GitHub and locate the [GitHub Repository] (https://github.com/Joeski88/know-food.git)
 2. Under the repository name, click "Clone or download".
 3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
 4. Open Git Bash
@@ -200,13 +187,13 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 6. Type `git clone`, and then paste the URL you copied in Step 3.
 
 ```
-$ git clone https://github.com/joeski88/firsttimeforeverything
+$ git clone https://github.com/joeski88/know-food
 ```
 
 7. Press Enter. Your local clone will be created.
 
 ```
-$ git clone https://github.com/Joeski88/firsttimeforeverything.git
+$ git clone https://github.com/Joeski88/know-food.git
 > Cloning into `CI-Clone`...
 > remote: Counting objects: 10, done.
 > remote: Compressing objects: 100% (8/8), done.
