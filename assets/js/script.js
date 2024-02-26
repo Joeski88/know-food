@@ -292,31 +292,6 @@
 
      },
      {
-        question: "Which of these is tahini made from?",
-        answers: [{
-                image: "assets/images/q12/chia.jpg",
-                correct: false
-            },
-            {
-                image: "assets/images/q12/fregola.jpg",
-                correct: false
-            },
-            {
-                image: "assets/images/q12/linseeds.jpg",
-                correct: false
-            },
-            {
-                image: "assets/images/q12/polenta.jpg",
-                correct: false
-            },
-            {
-                image: "assets/images/q12/sesame.jpg",
-                correct: true
-            },
-        ]
-
-     },
-     {
         question: "What herb makes béarnaise?",
         answers: [{
                 image: "assets/images/q13/parsley.jpg",
@@ -368,7 +343,7 @@
         question: "Which of these does traditional black caviar comes from?",
         answers: [{
                 image: "assets/images/q15/catfish.jpg",
-                correct: true
+                correct: false
             },
             {
                 image: "assets/images/q15/monkfish.jpg",
@@ -384,7 +359,7 @@
             },
             {
                 image: "assets/images/q15/sturgeon.jpg",
-                correct: false
+                correct: true
             },
         ] 
      },
@@ -396,6 +371,7 @@
  let currentQuestionIndex = 0;
  let currentQuestionNumber = 0;
  let score = 0;
+ let randomQuizQuestions = []
 
  /* functions to start quiz, add next button and display next questions*/
 
@@ -403,25 +379,31 @@
      currentQuestionIndex = 0;
      score = 0;
      nextButton.innerHTML = "next";
+     randomQuizQuestions = questions.sort(() => 0.5 - Math.random()).slice(0, 10)
      showQuestion();
  }
 
  function showQuestion() {
      resetState();
-     let currentQuestion = questions[currentQuestionIndex];
+     let currentQuestion = randomQuizQuestions[currentQuestionIndex];
      let questionNo = currentQuestionIndex + 1;
      questionElement.innerHTML = questionNo + "." + currentQuestion.question;
 
      currentQuestion.answers.forEach(answer => {
          const button = document.createElement("button");
          imageSrc = answer.image
-         console.log(imageSrc)
-         button.innerHTML = `<img src=${imageSrc} alt="food">`;
-         button.classList.add("btn");
-         answerButtons.appendChild(button);
          if (answer.correct) {
              button.dataset.correct = answer.correct;
          }
+         const buttonImage = document.createElement("img");
+         buttonImage.src = imageSrc
+         buttonImage.alt = 'food'
+         buttonImage.classList.add("answerImg");
+        //  button.innerHTML = `<img class="answerImg" src=${imageSrc} alt="food">`;
+         button.classList.add("btn");
+         button.appendChild(buttonImage)
+         answerButtons.appendChild(button);
+
          button.addEventListener("click", selectAnswer);
      });
  }
@@ -436,28 +418,28 @@
  }
 
  function selectAnswer(e) {
-     const selectedBtn = e.target;
-     const isCorrect = selectedBtn.dataset.correct === "true";
-     if (isCorrect) {
-         selectedBtn.classList.add("correct");
-         score++;
-     } else {
-         selectedBtn.classList.add("incorrect");
-     }
-     Array.from(answerButtons.children).forEach(button => {
-         if (button.dataset.correct === "true") {
-             button.classList.add("correct");
-         }
-         button.disabled = true;
-     });
-     nextButton.style.display = "block";
+        const selectedBtn = e.target.parentNode
+        const isCorrect = selectedBtn.dataset.correct === "true";
+        if (isCorrect) {
+            selectedBtn.classList.add("correct");
+            score++;
+        } else {
+            selectedBtn.classList.add("incorrect");
+        }
+        Array.from(answerButtons.children).forEach(button => {
+            if (button.dataset.correct === "true") {
+                button.classList.add("correct");
+            }
+            button.disabled = true;
+        });
+        nextButton.style.display = "block";
  }
 
  /* function to display score at the end and button to start quiz again*/
 
  function showScore() {
      resetState();
-     questionElement.innerHTML = `you scored ${score} out of ${questions.length}!`;
+     questionElement.innerHTML = `you scored ${score} out of ${randomQuizQuestions.length}!`;
      nextButton.innerHTML = "Play Again";
      nextButton.style.display = "block";
  }

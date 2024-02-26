@@ -28,13 +28,24 @@
 /*basic color scheme*/
 body {
     background: rgb(239, 183, 115);
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/portraitbackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:4rem;
+}
+
+@media screen and (min-width: 765px) {
+    body {
+        background-image: url('../images/backgroundhero.jpg');
+    }
 }
 
 /*background image*/
 
 img {
-    background-image: url(../images/portraitbackground.jpg);
+    /* background-image: url(../images/portraitbackground.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
     
@@ -44,16 +55,15 @@ img {
 
 .app {
     background: white;
-    width: 90%;
+    /* width: 90%; */
     max-width: 600px;
-    max-height: 700px;
-
+    opacity: 85%;
     /* styling for background picture*/
 
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* position: absolute; */
+    /* top: 90%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
     z-index: 2;
     background-color: #ffffff;
     color: #fff;
@@ -61,7 +71,7 @@ img {
     border-color: yellow;
     padding: 10px 20px;
     cursor: pointer;
-    border-radius: 12px
+    border-radius: 12px;
 }
 
 .app h1 {
@@ -70,6 +80,7 @@ img {
     font-weight: 600;
     border-bottom: 1px solid #333;
     padding-bottom: 30px;
+    text-align: center;
 }
 
 .quiz {
@@ -80,6 +91,7 @@ img {
     font-size: 18px;
     color: crimson;
     font-weight: 600;
+    text-align: center;
 }
 
 .btn {
@@ -87,13 +99,15 @@ img {
     color: #222;
     font-weight: 500;
     width: 100%;
-    border: 1px solid #222;
+    border: none;
     padding: 10px;
     margin: 10px 0;
     text-align: left;
     border-radius: 4px;
     cursor: crosshair;
     transition: all 0.3s;
+    max-width: 15rem;
+    min-width: 10rem;
 }
 
 .btn:hover:not([disabled]) {
@@ -107,6 +121,10 @@ img {
 
 #answer-buttons {
     max-width: 300px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #next-btn {
@@ -148,6 +166,27 @@ img {
     }
 }
 
+
+@media screen and (min-width: 425px) {
+
+    .image1 {
+        width: 100%;
+        background-position: center;
+        background-repeat: repeat;
+        background-size: cover;
+        border-bottom-style: none;
+        min-height: 2000px;
+    }
+
+    
+ #answer-buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: none;
+    justify-content: center;
+ }
+}
+
 @media screen and (min-width: 768px) {
 
     .image1 {
@@ -158,4 +197,19 @@ img {
         border-bottom-style: none;
         min-height: 2000px;
     }
+
+    
+ #answer-buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: none;
+    justify-content: center;
+ }
+}
+
+.answerImg {
+    width:100%;
+    border-radius: 3px;
+    /* min-width: 10rem; */
+    
 }
