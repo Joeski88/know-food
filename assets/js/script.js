@@ -4,11 +4,13 @@
          question: "Which one of these is a dragon fruit? ",
          answers: [{
                  image: "assets/images/q1/passionfruit.jpg",
-                 correct: false
+                 correct: false,
+                 text: "passion fruit",
              },
              {
                  image: "assets/images/q1/dragonfruit.jpg",
-                 correct: true
+                 correct: true,
+                 text: "dragon fruit",
              },
              {
                  image: "assets/images/q1/jackfruit.jpg",
@@ -399,7 +401,6 @@
          buttonImage.src = imageSrc
          buttonImage.alt = 'food'
          buttonImage.classList.add("answerImg");
-        //  button.innerHTML = `<img class="answerImg" src=${imageSrc} alt="food">`;
          button.classList.add("btn");
          button.appendChild(buttonImage)
          answerButtons.appendChild(button);
@@ -407,6 +408,13 @@
          button.addEventListener("click", selectAnswer);
      });
  }
+
+ /* add function to display the answers as text when button is clicked*/
+
+// //  function displayText() {
+// //     var text = document.getElementById ("text")
+// //     text.style.display = "block";
+//  }
 
  /* add functions to determine if answers are correct*/
 
@@ -448,15 +456,16 @@
      currentQuestionNumber++;
 
      currentQuestionIndex++;
-     if (currentQuestionNumber < 10) {
+     if (currentQuestionIndex < 10) {  
          showQuestion();
      } else {
          showScore();
      }
- }
+    }
+ 
 
  nextButton.addEventListener("click", () => {
-     if (currentQuestionIndex < questions.length) {
+     if (currentQuestionIndex < randomQuizQuestions.length) {
          handleNextButton();
      } else {
          startQuiz();
