@@ -33,7 +33,7 @@ body {
     background-image: url('../images/portraitbackground.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    padding:4rem;
+    padding: 4rem;
 }
 
 @media screen and (min-width: 765px) {
@@ -55,15 +55,11 @@ img {
 
 .app {
     background: white;
-    /* width: 90%; */
     max-width: 600px;
     opacity: 85%;
+
     /* styling for background picture*/
 
-    /* position: absolute; */
-    /* top: 90%; */
-    /* left: 50%; */
-    /* transform: translate(-50%, -50%); */
     z-index: 2;
     background-color: #ffffff;
     color: #fff;
@@ -76,7 +72,7 @@ img {
 
 .app h1 {
     font-size: 25px;
-    color: blueviolet;
+    color: rgb(43, 129, 63);
     font-weight: 600;
     border-bottom: 1px solid #333;
     padding-bottom: 30px;
@@ -89,7 +85,7 @@ img {
 
 .quiz h2 {
     font-size: 18px;
-    color: crimson;
+    color: rgb(171, 181, 85);
     font-weight: 600;
     text-align: center;
 }
@@ -121,14 +117,14 @@ img {
 
 #answer-buttons {
     max-width: 300px;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 #next-btn {
-    background: #001e4d;
+    background: #104c27;
     color: #fff;
     font-weight: 500;
     width: 150px;
@@ -209,7 +205,7 @@ img {
 
 .answerImg {
     width:100%;
-    border-radius: 3px;
+    border-radius: 20px;
     /* min-width: 10rem; */
     
 }
