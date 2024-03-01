@@ -4,7 +4,7 @@
 
 A fun, light hearted educational food quiz for everyone.
 
-<h2 align="center"><img src="assets/images/dragonfruit.jpeg"></h2>
+![Mockup](/assets/docs/Screenshot%202024-02-29%20205528.png)
 
 ## User Experience (UX)
 
@@ -27,20 +27,22 @@ A fun, light hearted educational food quiz for everyone.
 
 -   ### Design
     -   #### Colour Scheme
-        -   The three main colours used are ????. I chose these to give the site a striking view and maske the text easy to see.
+        -   The three main colours used are Dark green, lighter grassy green and white. I chose these to give the site a striking view and make the text easy to see.
     -   #### Typography
-        -  ????????? Vina sans, long cang and winx made for display are the fonts used in this page. Winx made for display font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. I like it as it is a clean font and is suitable for all types of content. Vina sans is used in the website name and nav bar options as it is bold, unique and in theory, remembered. Long cang is used for small pieces of text to add a bit of flair and relaxed kind of vibe. 
+        -  Used the standard font 'Franklin Gothic'. Looks clean and professional 
     -   #### Imagery
-        -   ???????Ive tried to use positive imagery throughout the site to make it visually attractive and to keep the visitor engaged. i used a scrolling gallery to really hammer home the beauty of being a single dad.
+        -   The whole quiz is based on visual impact. Images used are bright, clear and colourful.
 
 
 ## Features
 
 -   Responsive on all device sizes.
 
+-   Inititally just picture answers are displayed until an answer is clicked, once that happens it highlights green (correct) or red (incorrect) and all the answers pop up in text form. ![function](/assets/docs/function1.png) ![function](/assets/docs/function2.png)
+
 -   Engaging and fun quiz for all audiences.
 
--   Score totalling with javascript code.
+-   Score totalling with javascript code. ![Function](/assets/docs/function3.png)
 
 ## Technologies Used
 
@@ -54,19 +56,17 @@ A fun, light hearted educational food quiz for everyone.
 
 1. [Hover.css:](https://ianlunn.github.io/Hover/)
     - Hover.css was used on the Social Media icons in the footer to add the float transition while being hovered over.
-2. [Google Fonts:](https://fonts.google.com/)
-    - Google fonts were used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
-3. [Font Awesome:](https://fontawesome.com/)
+2. [Font Awesome:](https://fontawesome.com/)
     - Font Awesome was used on all pages throughout the website to add icons for social media tags/links.
-4. [Git](https://git-scm.com/)
+3. [Git](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
-5. [GitHub:](https://github.com/)
+4. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
-6. [VScode:] (https://code.visualstudio.com/) 
+5. [VScode:] (https://code.visualstudio.com/) 
     - Used as my IDE initially as struggled to use codeanywhere. Changed shortly after, switching to gitpod.
-7. [Favicon:](https://favicon.io/) 
+6. [Favicon:](https://favicon.io/) 
     - Used to download favicon for each page.
-8. [GitPod] (https://gitpod.io/workspaces)
+7. [GitPod] (https://gitpod.io/workspaces)
     - Moved to gitpod shortly after starting project to use as my main IDE.
 
 
@@ -74,13 +74,17 @@ A fun, light hearted educational food quiz for everyone.
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
--   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
-
-<img src="assets/images/.jpg"><img src="assets/images/.jpg"><img src="assets/images/.jpg"><img src="assets/images/.jpg"><img src="assets/images/.jpg">
-
+-   [W3C Markup Validator](https://validator.w3.org/)
+![Validator  screenshots](/assets/docs/htmlscreenshot1.png)
+![Validator  screenshots](/assets/docs/htmlscreenshot2.png)
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) 
+![Validator screenshots](/assets/docs/cssval.png)
 
-<img src="assets/images/">
+    [JavaScript Validator] (https://jshint.com/)
+![JS screenshots](/assets/docs/jsval1.png)
+![JS screenshots](/assets/docs/jsval2.png)
+
+
 
 ### Testing User Stories from User Experience (UX) Section
 
@@ -92,7 +96,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
         2. The main quiz is clearly layed out and obviously displayed for practicallity for the user. 
         3. The questions are clearly displayed, and answers are picture buttons. the answer highlights either, green for correct or red for incorrect. 
         4. The questions are randomised from a choice of 15 questions, and the quiz is scored out of 10.
-        5. At the end of the quiz, the user is given their final total score, and given an option to submit their score to the score board.
+        5. At the end of the quiz, the user is given their final total score.
 
     2. As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to complete the quiz easily.
 
@@ -116,7 +120,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
         
 
     3. As a Returning Visitor, I want to check the leaderboard and see my position.
-        1.  At the end of the quiz the score is displayed clearly, there will be a score board for users to compare their scores to others.
+        1.  At the end of the quiz the score is displayed clearly, there will be a score board for users to compare their scores to others. This will be a future feature.
 
 -   #### Frequent User Goals
 
@@ -127,10 +131,10 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Further Testing
 
--   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
+-   The Website was tested on Google Chrome, Microsoft Edge and Safari browsers.
 -   The website was viewed on a variety of devices such as Desktop, Laptop, iPhone13, iPhone14 & iPhone15 and galaxy fold.
 -   A large amount of testing was done to ensure that all pages were linking correctly.
--   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience       issues.
+-   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
 ### Known Bugs
 
@@ -139,7 +143,9 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   While trying to randomise the questions in javascript, the code randomised how many questions were asked and your score, rather than asking 10 random questions. FIXED!!!
 -   Some questions dont fit onto the page and are cut off at the top. FIXED!!! used flex boxes to dictate layout.
 -  Favicon not appearing. FIXED!!! needed to clear cache and hard refresh.
--  The quiz was not looping, and the play again button was not functioning. FIXED!!! when editing the javascript to randomise the questions asked i missed out changing "currentQuestionNumber" to "currentQuestionIndex"  
+-  The quiz was not looping, and the play again button was not functioning. FIXED!!! when editing the javascript to randomise the questions asked i missed out changing "currentQuestionNumber" to "currentQuestionIndex" 
+- Orange bar at the bottom of the page on mobile screens. FIXED!!! added 100vh in height to the body.
+- Start quiz button stopped working day before submission. FIXED!!! forgot to wrap the button class in index.html page with a closing "</a>" after the "<h1>". 
 
 ### Future Features
 
@@ -147,6 +153,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   Add question categories for example; regional food, meat and fish butchary, vegetables, food seasons etc.
 -   Change the pictures of the existing questions to add some more variation and aid revisitability.
 -   Add a leaderboard, and make the score of your answer higher or lower depending on the difficulty of the question.
+-   Add a timer to each question, that times out once finished and moves automatically onto the next question.
 
 ## Deployment
 
@@ -155,7 +162,7 @@ The site has been deployed to be hosted on GitHub pages. (please see the live li
 1. On GitHub, navigate to the repository you wish to deploy from.
 2. Under your repository name, click Settings.
 3. Navigate to the GitHub Pages section.
-4. Use the Select source drop-down menu to select master branch.
+4. Use the Select source drop-down menu to select main branch.
 5. Click Save
 
 ### GitHub Pages
@@ -359,7 +366,7 @@ GreatStack you tube account video; https://www.youtube.com/watch?v=PBcqGxrr9g8&t
 
 ### Acknowledgements
 
-1. Matt Purchase at learning people, has been there for me throughout the course so far and has been a great help and calming presence.
+1. Page called https://developer.mozilla.org/en-US/ was very helpful with terminology.
 2. Gareth Mcgirr my mentor, deserves alot of thanks, as i required quite alot of help and guidance along the way. He's been very patient with me.
 3. https://www.w3schools.com/css/default.asp very helpful link to help with code issues.
 4. The help team online with code institute, always fast and have been able to help every time i called upon them.
