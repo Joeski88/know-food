@@ -4,9 +4,18 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-sizing: border-box;
 }
+/*header styling*/
+header {
+    background-color: #104c27;
+    color: #ffffff;
+    width: 100%;
+    height: 12vh;
+    top: 0px;
+    position: fixed;
+    box-shadow: 0 4px 4px #bbc075;
+}
 
 /*quiz entry button styling*/
-
 /*center the quiz entry button*/
 
 .button {
@@ -22,7 +31,7 @@
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 12px;
-    opacity: 0.5;
+    opacity: 0.8;  
 }
 
 /*basic color scheme*/
@@ -34,6 +43,36 @@ body {
     background-repeat: no-repeat;
     padding: 4rem;
     min-height: 100vh;
+}
+
+h1 {
+    display: flex;
+    justify-content: left;
+    padding-left: 20px;
+    padding-top: 30px;
+    text-shadow: #c2bfbf;
+}
+
+h2 {
+    color: #ffffff;
+    margin-top: 10vh;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+footer {
+    background-color: #104c27;
+    color: #ffffff;
+    width: 100%;
+    height: 12vh;
+    border-radius: 5px;
+    border-color: #ffffff, 4px;
+    position: fixed;
+    bottom: 0px;
+    box-shadow: 8px 4px 4px 4px #bbc075;
 }
 
 @media screen and (min-width: 765px) {
@@ -48,7 +87,6 @@ img {
     /* background-image: url(../images/portraitbackground.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
-    
 }
 
     /*quiz styling*/
@@ -91,14 +129,14 @@ img {
 
 .btn {
     background: white;
-    color: #222;
+    color: #cec4c4;
     font-weight: 500;
     width: 100%;
     border: none;
     padding: 10px;
     margin: 10px 0;
     text-align: left;
-    border-radius: 4px;
+    border-radius: 12px;
     cursor: crosshair;
     transition: all 0.3s;
     max-width: 15rem;
@@ -106,7 +144,7 @@ img {
 }
 
 .btn:hover:not([disabled]) {
-    background: #222;
+    background: #c2bfbf;
     color: #fff;
 }
 
@@ -136,11 +174,13 @@ img {
 }
 
 .correct {
-    background: rgb(0, 255, 0);
+    background: rgb(121, 211, 121);
+    border-radius: 12px;
 }
 
 .incorrect {
-    background: rgb(255, 0, 0);
+    background: rgb(204, 90, 90);
+    border-radius: 12px;
 }
 
 /*media queries*/
@@ -157,10 +197,8 @@ img {
 
     .button {
         position: absolute;
-        
     }
 }
-
 
 @media screen and (min-width: 425px) {
 
@@ -173,7 +211,6 @@ img {
         min-height: 2000px;
     }
 
-    
  #answer-buttons {
     flex-direction: row;
     flex-wrap: wrap;
@@ -192,7 +229,6 @@ img {
         border-bottom-style: none;
         min-height: 2000px;
     }
-
     
  #answer-buttons {
     flex-direction: row;
@@ -206,5 +242,4 @@ img {
     width:100%;
     border-radius: 20px;
     /* min-width: 10rem; */
-    
 }
