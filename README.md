@@ -33,7 +33,6 @@ A fun, light hearted educational food quiz for everyone.
     -   #### Imagery
         -   The whole quiz is based on visual impact. Images used are bright, clear and colourful.
 
-
 ## Features
 
 -   Responsive on all device sizes.
@@ -62,29 +61,26 @@ A fun, light hearted educational food quiz for everyone.
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 4. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
-5. [VScode:] (https://code.visualstudio.com/) 
+5. [VScode:](https://code.visualstudio.com/) 
     - Used as my IDE initially as struggled to use codeanywhere. Changed shortly after, switching to gitpod.
 6. [Favicon:](https://favicon.io/) 
     - Used to download favicon for each page.
-7. [GitPod] (https://gitpod.io/workspaces)
+7. [GitPod](https://gitpod.io/workspaces)
     - Moved to gitpod shortly after starting project to use as my main IDE.
-
 
 ## Testing
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
--   [W3C Markup Validator](https://validator.w3.org/)
-![Validator  screenshots](/assets/docs/htmlscreenshot1.png)
-![Validator  screenshots](/assets/docs/htmlscreenshot2.png)
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) 
+![W3C Markup Validator](https://validator.w3.org/)
+![Validator screenshots](/assets/docs/htmlscreenshot1.png)
+![Validator screenshots](/assets/docs/htmlscreenshot2.png)
+![W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) 
 ![Validator screenshots](/assets/docs/cssval.png)
 
-    [JavaScript Validator] (https://jshint.com/)
+![JavaScript Validator](https://jshint.com/)
 ![JS screenshots](/assets/docs/jsval1.png)
 ![JS screenshots](/assets/docs/jsval2.png)
-
-
 
 ### Testing User Stories from User Experience (UX) Section
 
@@ -117,7 +113,6 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
     2. As a Returning Visitor, I want to check if new questions have been added.
         
         1.  This content would be refreshed and recycled regularly. With new quiz questions, and new and changing pictures for existing questions.
-        
 
     3. As a Returning Visitor, I want to check the leaderboard and see my position.
         1.  At the end of the quiz the score is displayed clearly, there will be a score board for users to compare their scores to others. This will be a future feature.
@@ -131,21 +126,23 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Further Testing
 
--   The Website was tested on Google Chrome, Microsoft Edge and Safari browsers.
--   The website was viewed on a variety of devices such as Desktop, Laptop, iPhone13, iPhone14 & iPhone15 and galaxy fold.
--   A large amount of testing was done to ensure that all pages were linking correctly.
--   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+- The Website was tested on Google Chrome, Microsoft Edge and Safari browsers.
+- The website was viewed on a variety of devices such as Desktop, Laptop, iPhone13, iPhone14 & iPhone15 and galaxy fold.
+- A large amount of testing was done to ensure that all pages were linking correctly.
+- Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
 ### Known Bugs
 
--   JavaScript code not displaying total score at the end of quiz. FIXED!!! - was using " ' " instead of " ` ".
--   Background image not covering whole screen. FIXED!!! - body was pushing image out of place.
--   While trying to randomise the questions in javascript, the code randomised how many questions were asked and your score, rather than asking 10 random questions. FIXED!!!
--   Some questions dont fit onto the page and are cut off at the top. FIXED!!! used flex boxes to dictate layout.
--  Favicon not appearing. FIXED!!! needed to clear cache and hard refresh.
--  The quiz was not looping, and the play again button was not functioning. FIXED!!! when editing the javascript to randomise the questions asked i missed out changing "currentQuestionNumber" to "currentQuestionIndex" 
+- JavaScript code not displaying total score at the end of quiz. FIXED!!! - was using " ' " instead of " ` ".
+- Background image not covering whole screen. FIXED!!! - body was pushing image out of place.
+- While trying to randomise the questions in javascript, the code randomised how many questions were asked and your score, rather than asking 10 random questions. FIXED!!!
+- Some questions dont fit onto the page and are cut off at the top. FIXED!!! used flex boxes to dictate layout.
+- Favicon not appearing. FIXED!!! needed to clear cache and hard refresh.
+- The quiz was not looping, and the play again button was not functioning. FIXED!!! when editing the javascript to randomise the questions asked i missed out changing         
+   "currentQuestionNumber" to "currentQuestionIndex" 
 - Orange bar at the bottom of the page on mobile screens. FIXED!!! added 100vh in height to the body.
 - Start quiz button stopped working day before submission. FIXED!!! forgot to wrap the button class in index.html page with a closing "</a>" after the "<h1>". 
+- App background turns the whole page red once clicked in a small specific area. !!!!!!!
 
 ### Future Features
 
@@ -169,24 +166,24 @@ The site has been deployed to be hosted on GitHub pages. (please see the live li
 
 The project was deployed to GitHub Pages using the following steps...
 
-1. Log in to GitHub and locate the [GitHub Repository]( https://joeski88.github.io/know-food/)
+1. Log in to GitHub and locate the ![GitHub Repository](https://joeski88.github.io/know-food/)
 2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
 3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
 4. Under "Source", click the dropdown called "None" and select "Master Branch".
 5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published site [link]( https://joeski88.github.io/know-food/) in the "GitHub Pages" section.
+6. Scroll back down through the page to locate the now published site ![link](https://joeski88.github.io/know-food/) in the "GitHub Pages" section.
 
 ### Forking the GitHub Repository
 
 By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/Joeski88/know-food.git)
+1. Log in to GitHub and locate the ![GitHub Repository](https://github.com/Joeski88/know-food.git)
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. You should now have a copy of the original repository in your GitHub account.
 
 ### Making a Local Clone
 
-1. Log in to GitHub and locate the [GitHub Repository] (https://github.com/Joeski88/know-food.git)
+1. Log in to GitHub and locate the ![GitHub Repository](https://github.com/Joeski88/know-food.git)
 2. Under the repository name, click "Clone or download".
 3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
 4. Open Git Bash
@@ -208,7 +205,7 @@ $ git clone https://github.com/Joeski88/know-food.git
 > Unpacking objects: 100% (10/10), done.
 ```
 
-Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
+Click ![Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
 ## Credits
 
@@ -299,7 +296,6 @@ Langoustine question
 4.	https://chefsmandala.com/archaeology-seafood-crab/ CRAB
 5.	https://shiki.sg/product/atlantic-wild-jumbo-prawn-langostino-super-jumbo-xl-salvaje-2kg-box-size-8-12/ JUMBO PRAWN
 
-
 Macadamia question
 
 1.	https://www.exportersindia.com/product-detail/vacuum-hazelnuts-5795675.htm hazelnut
@@ -307,7 +303,6 @@ Macadamia question
 3.	https://balconygardenweb.com/how-to-grow-a-cashew-tree-growing-cashew-nuts/  cashew
 4.	https://www.marthastewart.com/8262975/macadamia-nuts-health-benefits-uses macadamia
 5.	https://www.britannica.com/plant/chickpea chickpeas 
-
 
 Tahini question
 
@@ -357,9 +352,6 @@ GreatStack you tube account video; https://www.youtube.com/watch?v=PBcqGxrr9g8&t
 
 - Used this page to help with the terminology used when programming javascript; https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
-
-
-
 ### Media
 
 -   All images were found via searches on google images.
@@ -367,6 +359,5 @@ GreatStack you tube account video; https://www.youtube.com/watch?v=PBcqGxrr9g8&t
 ### Acknowledgements
 
 1. Page called https://developer.mozilla.org/en-US/ was very helpful with terminology.
-2. Gareth Mcgirr my mentor, deserves alot of thanks, as i required quite alot of help and guidance along the way. He's been very patient with me.
-3. https://www.w3schools.com/css/default.asp very helpful link to help with code issues.
-4. The help team online with code institute, always fast and have been able to help every time i called upon them.
+2. https://www.w3schools.com/css/default.asp very helpful link to help with code issues.
+3. The help team online with code institute, always fast and have been able to help every time i called upon them.
