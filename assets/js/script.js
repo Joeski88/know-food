@@ -383,7 +383,7 @@
  function startQuiz() {
      currentQuestionIndex = 0;
      score = 0;
-     nextButton.innerHTML = "next";
+     nextButton.innerHTML = "Next";
      randomQuizQuestions = questions.sort(() => 0.5 - Math.random()).slice(0, 10);
      showQuestion();
  }

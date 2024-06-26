@@ -4,7 +4,9 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-sizing: border-box;
 }
+
 /*header styling*/
+
 header {
     background-color: #104c27;
     color: #ffffff;
@@ -24,17 +26,15 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    background-color: #063b0d;
+    background-color: #2ddb44;
     color: #fff;
-    border: 2px;
-    border-color: yellow;
     padding: 10px 20px;
-    cursor: pointer;
     border-radius: 12px;
     opacity: 0.8;  
 }
 
 /*basic color scheme*/
+
 body {
     display: flex;
     justify-content: center;
@@ -45,6 +45,8 @@ body {
     min-height: 100vh;
 }
 
+/*header title styling*/
+
 h1 {
     display: flex;
     justify-content: left;
@@ -52,17 +54,26 @@ h1 {
     padding-top: 30px;
     text-shadow: #c2bfbf;
 }
+/*rules styling*/
 
-h2 {
+.rules {
     color: #ffffff;
-    margin-top: 10vh;
+    margin-top: 20vh;
+    display: flex;
+    background-color: burlywood;
+    padding: 10px;
+    border-radius: 10px;
 }
+
+/*footer text styling*/
 
 h3 {
     display: flex;
     justify-content: center;
-    padding: 20px;
+    margin-top: 5vh;
 }
+/*footer styling*/
+
 footer {
     background-color: #104c27;
     color: #ffffff;
@@ -75,28 +86,21 @@ footer {
     box-shadow: 8px 4px 4px 4px #bbc075;
 }
 
-@media screen and (min-width: 765px) {
-    body {
-        background-image: url('../images/backgroundhero.jpg');
-    }
-}
-
 /*background image*/
 
 img {
-    /* background-image: url(../images/portraitbackground.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-    /*quiz styling*/
+/*quiz styling*/
 
 .app {
     background: white;
-    max-width: 600px;
     opacity: 85%;
+    margin-top: 22vh;
 
-    /* styling for background picture*/
+/* styling for background picture*/
 
     z-index: 2;
     background-color: #ffffff;
@@ -184,6 +188,12 @@ img {
 }
 
 /*media queries*/
+
+@media screen and (min-width: 765px) {
+    body {
+        background-image: url('../images/backgroundhero.jpg');
+    }
+}
 
 @media screen and (max-width: 765px) {
     .image1 {
