@@ -30,7 +30,7 @@ header {
     color: #fff;
     padding: 10px 20px;
     border-radius: 12px;
-    opacity: 0.8;  
+    opacity: 0.8;
 }
 
 /*basic color scheme*/
@@ -54,6 +54,7 @@ h1 {
     padding-top: 30px;
     text-shadow: #c2bfbf;
 }
+
 /*rules styling*/
 
 .rules {
@@ -72,6 +73,7 @@ h3 {
     justify-content: center;
     margin-top: 5vh;
 }
+
 /*footer styling*/
 
 footer {
@@ -100,7 +102,7 @@ img {
     opacity: 85%;
     margin-top: 22vh;
 
-/* styling for background picture*/
+    /* styling for background picture*/
 
     z-index: 2;
     background-color: #ffffff;
@@ -187,6 +189,15 @@ img {
     border-radius: 12px;
 }
 
+.hide {
+    display: none;
+}
+
+.unhide {
+    display: block;
+}
+
+
 /*media queries*/
 
 @media screen and (min-width: 765px) {
@@ -221,12 +232,12 @@ img {
         min-height: 2000px;
     }
 
- #answer-buttons {
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-width: none;
-    justify-content: center;
- }
+    #answer-buttons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: none;
+        justify-content: center;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -239,17 +250,17 @@ img {
         border-bottom-style: none;
         min-height: 2000px;
     }
-    
- #answer-buttons {
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-width: none;
-    justify-content: center;
- }
+
+    #answer-buttons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: none;
+        justify-content: center;
+    }
 }
 
 .answerImg {
-    width:100%;
+    width: 100%;
     border-radius: 20px;
     /* min-width: 10rem; */
 }

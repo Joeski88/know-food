@@ -138,11 +138,11 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 - While trying to randomise the questions in javascript, the code randomised how many questions were asked and your score, rather than asking 10 random questions. FIXED!!!
 - Some questions dont fit onto the page and are cut off at the top. FIXED!!! used flex boxes to dictate layout.
 - Favicon not appearing. FIXED!!! needed to clear cache and hard refresh.
-- The quiz was not looping, and the play again button was not functioning. FIXED!!! when editing the javascript to randomise the questions asked i missed out changing         
+- The quiz was not looping, and the play again button was not functioning. FIXED!!! when editing the javascript to randomise the questions asked I missed out changing         
    "currentQuestionNumber" to "currentQuestionIndex" 
 - Orange bar at the bottom of the page on mobile screens. FIXED!!! added 100vh in height to the body.
 - Start quiz button stopped working day before submission. FIXED!!! forgot to wrap the button class in index.html page with a closing "</a>" after the "<h1>". 
-- App background turns the whole page red once clicked in a small specific area. !!!!!!!
+- App background turns the whole page red once clicked in a small specific area. FIXED!!! Removed "parentNode" from line 429, fixed bug instantly.
 
 ### Future Features
 

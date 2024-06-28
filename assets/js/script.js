@@ -419,14 +419,15 @@
  /* add functions to determine if answers are correct*/
 
  function resetState() {
-     nextButton.style.display = "none";
+     nextButton.classList.add("hide") /*.style.display = "none";*/
      while (answerButtons.firstChild) {
          answerButtons.removeChild(answerButtons.firstChild);
      }
  }
 
  function selectAnswer(e) {
-     const selectedBtn = e.target.parentNode;
+     const selectedBtn = e.target
+     console.log(selectedBtn)
      const isCorrect = selectedBtn.dataset.correct === "true";
      if (isCorrect) {
          selectedBtn.classList.add("correct");
@@ -447,7 +448,8 @@
          console.log(textAnswers[index].innerHTML);
          textAnswers[index].style.display = 'block';
      }
-     nextButton.style.display = 'block';
+     nextButton.classList.remove("hide") /*.style.display = 'block';*/
+     nextButton.classList.add("unhide")
  }
 
  /* function to display score at the end and button to start quiz again*/
@@ -462,6 +464,8 @@
  function handleNextButton() {
      currentQuestionNumber++;
 
+     /*document.getElementById("answer-buttons").classList.remove("incorrect");*/
+
      currentQuestionIndex++;
      if (currentQuestionIndex < 10) {
          showQuestion();
@@ -471,19 +475,19 @@
  }
 
 
- document.addEventListener("DOMContentLoaded", function() {
-    // Your code here
-    const nextButton = document.getElementById("next-btn");
+ document.addEventListener("DOMContentLoaded", function () {
+     // Your code here
+     const nextButton = document.getElementById("next-btn");
 
-    // Add event listener to nextButton
-    nextButton.addEventListener("click", () => {
-        if (currentQuestionIndex < randomQuizQuestions.length) {
-            handleNextButton();
-        } else {
-            startQuiz();
-        }
-    });
+     // Add event listener to nextButton
+     nextButton.addEventListener("click", () => {
+         if (currentQuestionIndex < randomQuizQuestions.length) {
+             handleNextButton();
+         } else {
+             startQuiz();
+         }
+     });
 
-    // Call startQuiz to initialize the quiz
-    startQuiz();
-});
+     // Call startQuiz to initialize the quiz
+     startQuiz();
+ });
