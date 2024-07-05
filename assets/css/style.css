@@ -15,6 +15,7 @@ header {
     top: 0px;
     position: fixed;
     box-shadow: 0 4px 4px #bbc075;
+    z-index: 100;
 }
 
 /*quiz entry button styling*/
@@ -101,6 +102,7 @@ img {
     background: white;
     opacity: 85%;
     margin-top: 22vh;
+    margin-bottom: 22vh;
 
     /* styling for background picture*/
 
@@ -262,5 +264,6 @@ img {
 .answerImg {
     width: 100%;
     border-radius: 20px;
+    max-height: 10rem;
     /* min-width: 10rem; */
 }
