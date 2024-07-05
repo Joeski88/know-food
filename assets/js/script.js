@@ -30,6 +30,47 @@ var Quiz = function(){
     this.filename = "./assets/questions.json";
 };
 
+/* added new function to call json data */
+
+Quiz.prototype.randomiseQuestions = function(json_data){
+    //convert data to list
+    var result = [];
+    for(var i in json_data) {
+        result.push([json_data [i]]);
+    }
+
+    console.log(result)
+
+    result = result.sort(() => 0.5 - Math.random()).slice(0,10);
+    return result
+};
+
+/* function to start quiz*/
+
+Quiz.prototype.startQuiz = function(json_data) {
+    var game = this;
+    this.currentQuestionIndex = 0;
+    this.questions = json_data;
+    console.log("Quiz game started", json_data)
+
+    this.score = 0;
+
+    this.nextButton = document.getElementById("next-btn");
+    this.nextButton.innerHTML = "Next";
+    this.nextButton = document.getElementById("next-btn");
+        console.log("Next button", game.nextButton)
+
+        //add error check for next button
+        if (game.nextButton != null){
+            //add event listener to next button
+            game.nextButton.addEventListener("click", () =>{
+                if (game.currentQuestionIndex < game.randomQuizQuestions.length) {
+                    game.currentQuestionNumber++;
+                    console.log(this.currentQuestionIndex)    
+                }
+            })
+        }
+}
  /* functions to start quiz, add next button and display next questions*/
 
  function startQuiz() {
