@@ -163,3 +163,45 @@ Quiz.prototype.selectAnswer = function(e) {
 
     game.nextButton.style.display = 'block';
 };
+
+/* function to display score at the end of quiz and to restart quiz */
+Quiz.prototype.showScore = function() {
+    this.resetState();
+    this.questionElement.innerHTML = `you scored ${score} out of ${this.randomQuizQuestions.length}!`;
+    this.nextButton.innerHTML = "Play Again";
+    this.nextButton.style.display = "block";
+};
+
+Quiz.prototype.handleNextButton = function() {
+
+    this.currentQuestionIndex++;
+
+    if (this.currentQuestionIndex < 10) {
+        this.showQuestion();
+    } else {
+        this.showScore();
+    }
+};
+
+var game = null;
+
+window.onload = function () {
+    if (game == null){
+        game = new Quiz();
+    }
+fetchJSONData();
+};
+
+/*define function to pull json data*/
+
+function fetchJSONData() {
+    fetch('./assets/questions.json')
+        .then((res) => {
+            if (!res.ok) {
+                throw new Error(`HTTP error! Status: ${res.status}`);
+            }
+            return res.json();
+        })
+        .then((data) => game.startQuiz(data))
+        .catch((error) => console.error("Unable to fetch data:", error));
+};
