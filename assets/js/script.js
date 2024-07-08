@@ -66,13 +66,67 @@ Quiz.prototype.startQuiz = function(json_data) {
             game.nextButton.addEventListener("click", () =>{
                 if (game.currentQuestionIndex < game.randomQuizQuestions.length) {
                     game.currentQuestionNumber++;
-                    console.log(this.currentQuestionIndex)    
+                    console.log(game.currentQuestionIndex, game.randomQuizQuestions.length);
+                    game.handleNextButton();    
+                } else {
+                    game.startQuiz(json_data);
                 }
-            })
+            });
         }
+        this.randomQuizQuestions = this.randomiseQuestions(this.questions);
+        this.showQuestion();
 }
- /* functions to start quiz, add next button and display next questions*/
 
+Quiz.prototype.showQuestion = function() {
+    this.resetState();
+    this.currentQuestion = this.randomQuizQuestions[this.currentQuestionIndex][0];
+
+    var questionNo = this.currentQuestionIndex + 1;
+    console.log("Question:", this.currentQuestion, this.currentQuestion.question, this.currentQuestion.question);
+    this.questionElement = document.getElementById("question");
+    this.questionElement.innerHTML = questionNo + "." + this.currentQuestion.question;
+
+    var game= this;
+    this.currentQuestion.answers.forEach(answer => {
+        var button = document.createElement("button");
+        console.log("answer", answer, answer.image);
+
+        if (answer.correct) {
+            button.dataset.correct = answer.correct;
+        }
+
+        var buttonImage = document.createElement("img");
+
+        console.log("answer", answer, answer.image);
+
+        buttonImage.src = 'https://joeski88.github.io/know-food/' + answer.image;
+        buttonImage.alt = 'food';
+
+        buttonImage.classList.add("answerImg");
+        button.classList.add("btn");
+
+        button.appendChild(buttonImage);
+
+        const buttonText = document.createElement('span');
+
+        buttonText.classList.add('text-answer');
+        buttonText.textContent = answer.text;
+
+        button.appendChild(buttonText);
+
+        this.answerButtons = document.getElementById("answer-buttons");
+        this.answerButtons.appendChild(button);
+
+        buttonText.style.display = 'none';
+
+        button.addEventListener("click", this.selectAnswer);
+
+    });
+}
+
+
+ /* functions to start quiz, add next button and display next questions*/
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
  function startQuiz() {
      currentQuestionIndex = 0;
      score = 0;
