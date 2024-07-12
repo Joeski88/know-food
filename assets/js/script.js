@@ -126,7 +126,7 @@ Quiz.prototype.showQuestion = function() {
 
 /* add functions to determine if answers are correct */
 
-Quiz.prototype.selectAnswer.resetState = function() {
+Quiz.prototype.resetState = function() {
     this.nextButton.style.display = 'none';
 
     answerButtons = document.getElementById("answer-buttons")
