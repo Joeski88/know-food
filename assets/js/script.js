@@ -27,7 +27,7 @@ var Quiz = function(){
     this.score = 0;
     this.randomQuizQuestions = [];
 
-    this.filename = "./assets/questions.json";
+    this.filename = "assets/questions.json";
 };
 
 /* added new function to call json data */
@@ -167,7 +167,9 @@ Quiz.prototype.selectAnswer = function(e) {
 /* function to display score at the end of quiz and to restart quiz */
 Quiz.prototype.showScore = function() {
     this.resetState();
-    this.questionElement.innerHTML = `you scored ${score} out of ${this.randomQuizQuestions.length}!`;
+    this.questionElement.innerHTML = `you scored ${this.score} out of ${this.randomQuizQuestions.length}!`;
+    this.questionElement.innerHTML += "<br>";
+    this.questionElement.innerHTML += this.checkScore();
     this.nextButton.innerHTML = "Play Again";
     this.nextButton.style.display = "block";
 };
@@ -195,7 +197,7 @@ fetchJSONData();
 /*define function to pull json data*/
 
 function fetchJSONData() {
-    fetch('./assets/questions.json')
+    fetch('assets/questions.json')
         .then((res) => {
             if (!res.ok) {
                 throw new Error(`HTTP error! Status: ${res.status}`);
@@ -205,3 +207,27 @@ function fetchJSONData() {
         .then((data) => game.startQuiz(data))
         .catch((error) => console.error("Unable to fetch data:", error));
 };
+/* Create switch statement to provide user with comment upon finishing quiz */
+Quiz.prototype.function = checkScore() {
+    //var score = this.score;
+
+    switch(true){
+        case (score <= 3):
+            console.log("low score", score)
+            return "Might wanna watch some more cooking shows!!";
+            break
+
+        case (score > 3 && score <= 6):
+                console.log("Mid", score)
+            return "Not bad, but I'd suggest maybe actually reading the cook books instead of just looking at the pictures";
+            break;
+
+        case (score > 6 && score <= 10):
+                console.log("Master Chef!", score)
+            return "Damn, you are a MASTERchef!! You definitly KNOWFOOD!";
+            break;
+    }
+};
+/*checkScore(2)
+checkScore(4)
+checkScore(8)*/
