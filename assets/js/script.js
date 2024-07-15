@@ -208,8 +208,8 @@ function fetchJSONData() {
         .catch((error) => console.error("Unable to fetch data:", error));
 };
 /* Create switch statement to provide user with comment upon finishing quiz */
-Quiz.prototype.function = checkScore() {
-    //var score = this.score;
+Quiz.prototype.checkScore = function() {
+    var score = this.score;
 
     switch(true){
         case (score <= 3):
@@ -228,6 +228,3 @@ Quiz.prototype.function = checkScore() {
             break;
     }
 };
-/*checkScore(2)
-checkScore(4)
-checkScore(8)*/
