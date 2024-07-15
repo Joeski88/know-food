@@ -136,7 +136,7 @@ Quiz.prototype.resetState = function() {
 }
 
 Quiz.prototype.selectAnswer = function(e) {
-    const selectedBtn = e.target.parentNode;
+    const selectedBtn = e.target; // removed parent node from here, fixed bug but creted a new one.
     console.log(e)
     const isCorrect = selectedBtn.dataset.correct === "true";
 

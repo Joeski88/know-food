@@ -148,6 +148,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 - Start quiz button stopped working day before submission. FIXED!!! forgot to wrap the button class in index.html page with a closing "</a>" after the "<h1>". 
 - App background turns the whole page red once clicked in a small specific area. FIXED!!! Removed "parentNode" from line 429, fixed bug instantly.
 - Data not being pulled from json file. FIXED!! file path was incorrect.
+- Red background appears when certain area is clicked
+- ![Screenshot](/assets/docs/redbkgrndbug.png)
 
 ### Future Features
 
