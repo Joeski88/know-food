@@ -20,7 +20,7 @@ A fun, light hearted educational food quiz for everyone.
 
         1. As a Returning Visitor, I want to beat my previous score.  
         2. As a Returning Visitor, I want to check if new questions have been added.
-        3. As a Returning Visitor, I want to check the leaderboard and see my position.???
+        3. As a Returning Visitor, I want to check the leaderboard and see my position (future feature).
 
     -   #### Frequent User Goals
         1. As a Frequent User, I want to see if the images and potential answers have been changed to add another level to the quiz.
@@ -37,11 +37,15 @@ A fun, light hearted educational food quiz for everyone.
 
 -   Responsive on all device sizes.
 
--   Inititally just picture answers are displayed until an answer is clicked, once that happens it highlights green (correct) or red (incorrect) and all the answers pop up in text form. ![function](/assets/docs/function1.png) ![function](/assets/docs/function2.png)
+-   Inititally just picture answers are displayed until an answer is clicked, once that happens it highlights green (correct) or red (incorrect) and all the answers pop up in text form. 
+
+-   ![function](/assets/docs/function1.png) 
+-   ![function](/assets/docs/function2.png)
 
 -   Engaging and fun quiz for all audiences.
 
--   Score totalling with javascript code. ![Function](/assets/docs/function3.png)
+-   Score totalling with javascript code. 
+-   ![Function](/assets/docs/function3.png)
 
 ## Technologies Used
 
@@ -143,6 +147,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 - Orange bar at the bottom of the page on mobile screens. FIXED!!! added 100vh in height to the body.
 - Start quiz button stopped working day before submission. FIXED!!! forgot to wrap the button class in index.html page with a closing "</a>" after the "<h1>". 
 - App background turns the whole page red once clicked in a small specific area. FIXED!!! Removed "parentNode" from line 429, fixed bug instantly.
+- Data not being pulled from json file. FIXED!! file path was incorrect.
 
 ### Future Features
 
@@ -213,7 +218,7 @@ Click ![Here](https://help.github.com/en/github/creating-cloning-and-archiving-r
 
 ### Code
 
-1. Codeanywhere.
+1. Codeanywhere(at the very start).
 2. github.
 3. VS Code.
 
@@ -266,75 +271,75 @@ Tomahawk question
 
 Saffron flower question
 
-1.	https://www.gardenersworld.com/plants/crocus-sativus/ SAFFRON 
-2.	https://www.bhg.com/gardening/flowers/bulbs/alliums-for-your-garden/ ALLUM
-3.	https://eu.goupstate.com/story/lifestyle/home-garden/2019/09/25/betty-montgomery-spider-lilies-add-right-touch-to-fall-gardens/2700084007/ SPIDER LILLY
-4.	https://www.gardenersbasics.com/tools/blog/how-to-grow-poppies-indoors POPPY
-5.	https://weedwise.conservationdistrict.org/cemo6 KNAPWEED
+1.	https://www.gardenersworld.com/plants/crocus-sativus/ Saffron
+2.	https://www.bhg.com/gardening/flowers/bulbs/alliums-for-your-garden/ Allum
+3.	https://eu.goupstate.com/story/lifestyle/home-garden/2019/09/25/betty-montgomery-spider-lilies-add-right-touch-to-fall-gardens/2700084007/ Spider Lilly
+4.	https://www.gardenersbasics.com/tools/blog/how-to-grow-poppies-indoors Poppy
+5.	https://weedwise.conservationdistrict.org/cemo6 Knapweed
 
 Miso question
 
-1.	https://www.sugarfit.com/blog/is-soya-bean-good-for-diabetes/ SOYA BEANS
-2.	https://www.gourmetsweets.co.uk/products/assorted-jelly-beans?variant=44058786431188 JELLY BEANS
-3.	https://www.theguardian.com/food/2023/jan/18/beans-in-toast-uk-should-switch-to-broad-bean-bread-say-researchers BROAD BEANS
-4.	https://www.limoncello.co.uk/blogs/news/exploring-the-richness-of-italian-borlotti-beans-a-true-culinary-delight BORLOTTI BEANS
-5.	https://www.stylecraze.com/articles/amazing-benefits-of-kidney-beans-for-skin-hair-and-health/ KIDNEY BEANS
+1.	https://www.sugarfit.com/blog/is-soya-bean-good-for-diabetes/ Soya Beans
+2.	https://www.gourmetsweets.co.uk/products/assorted-jelly-beans?variant=44058786431188 Jelly Beans
+3.	https://www.theguardian.com/food/2023/jan/18/beans-in-toast-uk-should-switch-to-broad-bean-bread-say-researchers Broad Beans
+4.	https://www.limoncello.co.uk/blogs/news/exploring-the-richness-of-italian-borlotti-beans-a-true-culinary-delight Borlotti Beans
+5.	https://www.stylecraze.com/articles/amazing-benefits-of-kidney-beans-for-skin-hair-and-health/ Kidney Beans
 
 Tuber question
 
-1.	https://www.agrivi.com/blog/farm-management-practices-for-increased-potato-tubers-yield/ POTATO
-2.	https://en.wikipedia.org/wiki/Cucumber CUCUMBER
-3.	https://www.amazon.co.uk/PREMIER-SEEDS-DIRECT-Aubergine-Fingers/dp/B08X695KKB AUBERGINE
-4.	https://parade.com/23643/lindsaylowe/what-the-heck-is-romanesco-and-how-do-you-cook-it/ rOMANESCO CAULIFLOWER
-5.	https://www.thekitchn.com/whats-the-difference-between-white-and-yellow-corn-233298 CORN
+1.	https://www.agrivi.com/blog/farm-management-practices-for-increased-potato-tubers-yield/ Potato
+2.	https://en.wikipedia.org/wiki/Cucumber Cucumber
+3.	https://www.amazon.co.uk/PREMIER-SEEDS-DIRECT-Aubergine-Fingers/dp/B08X695KKB Aubergine
+4.	https://parade.com/23643/lindsaylowe/what-the-heck-is-romanesco-and-how-do-you-cook-it/ Romanesco Cauliflower
+5.	https://www.thekitchn.com/whats-the-difference-between-white-and-yellow-corn-233298 Corn
 
 Langoustine question
 
-1.	https://foodandtravel.com/food/in-season/langoustine LANGOUSTINE
-2.	https://www.vecteezy.com/photo/1897646-crayfish-on-white-background CRAYFISH
-3.	https://www.stockfood.co.uk/images/00859066-Cooked-spiny-lobster SPINY LOBSTER
-4.	https://chefsmandala.com/archaeology-seafood-crab/ CRAB
-5.	https://shiki.sg/product/atlantic-wild-jumbo-prawn-langostino-super-jumbo-xl-salvaje-2kg-box-size-8-12/ JUMBO PRAWN
+1.	https://foodandtravel.com/food/in-season/langoustine Langoustine
+2.	https://www.vecteezy.com/photo/1897646-crayfish-on-white-background Crayfish
+3.	https://www.stockfood.co.uk/images/00859066-Cooked-spiny-lobster Spiny Lobster
+4.	https://chefsmandala.com/archaeology-seafood-crab/ Crab
+5.	https://shiki.sg/product/atlantic-wild-jumbo-prawn-langostino-super-jumbo-xl-salvaje-2kg-box-size-8-12/ Jumbo Prawn
 
 Macadamia question
 
-1.	https://www.exportersindia.com/product-detail/vacuum-hazelnuts-5795675.htm hazelnut
-2.	https://www.medicalnewstoday.com/articles/325000 brazil nut 
-3.	https://balconygardenweb.com/how-to-grow-a-cashew-tree-growing-cashew-nuts/  cashew
-4.	https://www.marthastewart.com/8262975/macadamia-nuts-health-benefits-uses macadamia
-5.	https://www.britannica.com/plant/chickpea chickpeas 
+1.	https://www.exportersindia.com/product-detail/vacuum-hazelnuts-5795675.htm Hazelnut
+2.	https://www.medicalnewstoday.com/articles/325000 Brazil Nut 
+3.	https://balconygardenweb.com/how-to-grow-a-cashew-tree-growing-cashew-nuts/  Cashew
+4.	https://www.marthastewart.com/8262975/macadamia-nuts-health-benefits-uses Macadamia
+5.	https://www.britannica.com/plant/chickpea Chickpeas 
 
 Tahini question
 
-1.	https://zerowastebulkfoods.co.uk/products/fregola-giant-couscous-organic fregola
-2.	https://www.foodiecrush.com/creamy-polenta/ polenta
-3.	https://draxe.com/nutrition/chia-seeds-benefits-side-effects/ chia seeds
-4.	https://www.bhg.com/recipes/healthy/eating/flaxseed/ linseeds
-5.	https://www.tastingtable.com/1049109/most-of-the-worlds-sesame-seeds-come-from-this-country/ sesame
+1.	https://zerowastebulkfoods.co.uk/products/fregola-giant-couscous-organic Fregola
+2.	https://www.foodiecrush.com/creamy-polenta/ Polenta
+3.	https://draxe.com/nutrition/chia-seeds-benefits-side-effects/ Chia seeds
+4.	https://www.bhg.com/recipes/healthy/eating/flaxseed/ Linseeds
+5.	https://www.tastingtable.com/1049109/most-of-the-worlds-sesame-seeds-come-from-this-country/ Sesame
 
 Bearnaise question 
 
-1.	https://www.gurneys.com/product/sage sage
-2.	https://propagationplace.co.uk/vegetable/curled-parsley/ parsley
-3.	https://www.thespicehouse.com/blogs/news/rosemary-substitute rosemary
-4.	https://recipes.net/articles/tarragon-substitute/ tarragon
-5.	https://www.kerrysfresh.co.uk/product/thyme/ thyme
+1.	https://www.gurneys.com/product/sage Sage
+2.	https://propagationplace.co.uk/vegetable/curled-parsley/ Parsley
+3.	https://www.thespicehouse.com/blogs/news/rosemary-substitute Rosemary
+4.	https://recipes.net/articles/tarragon-substitute/ Tarragon
+5.	https://www.kerrysfresh.co.uk/product/thyme/ Thyme
 
 Apple question 
 
-1.	https://nationaltoday.com/peach-blossom-day/ peach
-2.	https://boisdejasmin.com/2019/04/what-does-orange-blossom-smell-like.html orange
-3.	https://plantura.garden/uk/fruits/raspberries/raspberry-overview raspebrry
-4.	https://www.floraqueen.com/blog/apple-blossom-michigan-state-flower-fragranced-beauty apple 
-5.	https://seed2plant.in/products/cherry-blossom-live-plant cherry
+1.	https://nationaltoday.com/peach-blossom-day/ Peach
+2.	https://boisdejasmin.com/2019/04/what-does-orange-blossom-smell-like.html Orange
+3.	https://plantura.garden/uk/fruits/raspberries/raspberry-overview Raspebrry
+4.	https://www.floraqueen.com/blog/apple-blossom-michigan-state-flower-fragranced-beauty Apple 
+5.	https://seed2plant.in/products/cherry-blossom-live-plant Cherry
 
 Caviar question 
 
-1.	https://pngtree.com/freebackground/salmon-is-swimming-under-water_2649320.html salmon
-2.	https://www.keywestaquarium.com/puffer-fish puffer fish
-3.	https://www.newsweek.com/giant-catfish-caught-fisherman-battle-1787592 catfish 
-4.	https://www.nationalfisherman.com/northeast/new-england-council-looks-to-next-monkfish-changes monkfish
-5.	https://www.iucn.org/content/sturgeon-more-critically-endangered-any-other-group-species sturgeon
+1.	https://pngtree.com/freebackground/salmon-is-swimming-under-water_2649320.html Salmon
+2.	https://www.keywestaquarium.com/puffer-fish Puffer Fish
+3.	https://www.newsweek.com/giant-catfish-caught-fisherman-battle-1787592 Catfish 
+4.	https://www.nationalfisherman.com/northeast/new-england-council-looks-to-next-monkfish-changes Monkfish
+5.	https://www.iucn.org/content/sturgeon-more-critically-endangered-any-other-group-species Sturgeon
 
 - The background pictures were also taken from google image search
 1. https://stock.adobe.com/uk/search?k=%22vegetable+frame%22  - landscape background

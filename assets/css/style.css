@@ -67,6 +67,10 @@ h1 {
     border-radius: 10px;
 }
 
+.rulelist {
+    padding: 10px;
+}
+
 /*footer text styling*/
 
 h3 {
@@ -203,9 +207,9 @@ img {
 /*media queries*/
 
 @media screen and (min-width: 765px) {
-    body {
+    /*body {
         background-image: url('../images/backgroundhero.jpg');
-    }
+    }*/
 }
 
 @media screen and (max-width: 765px) {
