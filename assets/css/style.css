@@ -72,6 +72,9 @@ h1 {
 .logo {
     margin-top: 10px;
     margin-left: 10px;
+    width: 100%;
+    height: auto;
+    max-width: 300px;
 }
 
 /*rules styling*/
@@ -237,6 +240,10 @@ img {
     .button {
         position: absolute;
     }
+
+    h3 {
+        margin-left: 15px;
+    }
 }
 
 @media screen and (min-width: 425px) {
@@ -281,9 +288,13 @@ img {
     }
 }
 
-.answerImg {
-    width: 100%;
-    border-radius: 20px;
-    max-height: 10rem;
-    /* min-width: 10rem; */
+    .answerImg {
+        width: 100%;
+        border-radius: 20px;
+        max-height: 10rem;
+        min-width: 10rem;
+}
+
+    h3 {
+        margin-left: 15px;
 }
