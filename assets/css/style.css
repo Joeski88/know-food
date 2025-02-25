@@ -18,6 +18,19 @@ header {
     z-index: 100;
 }
 
+.header img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: #555;
+  }
+  
+  .header h1 {
+    position: relative;
+    top: 18px;
+    left: 10px;
+  }
+
 /*quiz entry button styling*/
 /*center the quiz entry button*/
 
@@ -27,11 +40,11 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    background-color: #2ddb44;
+    background-color: #1e6828;
     color: #fff;
     padding: 10px 20px;
     border-radius: 12px;
-    opacity: 0.8;
+    border: #2ddb44;
 }
 
 /*basic color scheme*/
@@ -39,7 +52,7 @@ header {
 body {
     display: flex;
     justify-content: center;
-    background-image: url('../images/portraitbackground.jpg');
+    background-image: url('../images/background.png');
     background-size: cover;
     background-repeat: no-repeat;
     padding: 4rem;
@@ -49,11 +62,16 @@ body {
 /*header title styling*/
 
 h1 {
+    
     display: flex;
     justify-content: left;
-    padding-left: 20px;
-    padding-top: 30px;
+    margin-left: 10px;
     text-shadow: #c2bfbf;
+}
+
+.logo {
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 /*rules styling*/
@@ -104,7 +122,6 @@ img {
 
 .app {
     background: white;
-    opacity: 85%;
     margin-top: 22vh;
     margin-bottom: 22vh;
 
@@ -206,11 +223,6 @@ img {
 
 /*media queries*/
 
-@media screen and (min-width: 765px) {
-    /*body {
-        background-image: url('../images/backgroundhero.jpg');
-    }*/
-}
 
 @media screen and (max-width: 765px) {
     .image1 {
@@ -243,6 +255,10 @@ img {
         flex-wrap: wrap;
         max-width: none;
         justify-content: center;
+    }
+
+    h3 {
+        margin-left: 15px;
     }
 }
 

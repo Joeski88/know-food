@@ -367,4 +367,4 @@ GreatStack you tube account video; https://www.youtube.com/watch?v=PBcqGxrr9g8&t
 
 1. Page called https://developer.mozilla.org/en-US/ was very helpful with terminology.
 2. https://www.w3schools.com/css/default.asp very helpful link to help with code issues.
-3. The help team online with code institute, always fast and have been able to help every time i called upon them.
+3. https://www.canva.com/ The background image was designed on Canva. 
