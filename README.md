@@ -4,20 +4,23 @@
 
 A fun, light hearted educational food quiz for everyone.
 
-![Mockup](/assets/docs/Screenshot%202024-02-29%20205528.png)
+![Mockup](/assets/docs/techsinimockup.png)
 
 ## Resubmission Summary
 
 This is a resubmission, to combat and improve this project based on the feedback given I made several changes to the app. 
-    - Exported the questions into a Json file and imported them in.
-    - Turned the quiz into an object using the 'this' keyword. 
-    - Edited the styling and made the general aesthetics better and more improved.
-    - Added a message displayed to the player at the end of the quiz tht changes depending on their score.
+- Exported the questions into a Json file and imported them in.
+- Turned the quiz into an object using the 'this' keyword. 
+- Edited the styling and made the general aesthetics better and more improved.
+- Added a message displayed to the player at the end of the quiz tht changes depending on their score.
 
 During this process, as you can imagine, lots of bugs were thrown up. Here is an explanation on the biggest and main issues I came accross.
-    - The score was not totaling properly after all of my refactoring, The issue occurs because you are attaching the click event listener to the entire button element, which contains an <img> and <span> element. When you click on the image inside the button, e.target refers to the image, not the button.
+- The score was not totaling properly after all of my refactoring, The issue occurs because you are attaching the click event listener to the entire button element, which contains an <img> and <span> element. When you click on the image inside the button, e.target refers to the image, not the button.
 ##### Solution
 Modify the selectAnswer function to ensure that the correct button element (not its child elements) is captured when clicked
+
+- The other big issue I had was that when you finished the quiz and tried to press the play again button, it would increment in 2's, for eg; question number 1, 3, 5, 7, 9 were asked, so only 5 questions instead of 10, an then, dropped down each time you play until it just broke. This was due to multiple event listeners being called at the same time. After much head scratching, eventually I managed to fix it by adding a 'this.initialised' to ensure the event listener for the Next button is only added once. Also, removed the extra increment of any “question number” inside the click handler. I already rely on this.currentQuestionIndex, so I increment that once in handleNextButton().
+In short, Javascript let's you keep adding event listeners as much as you want, so there are two click events on the next after the first round etc., hence why it was jumping through the questions.
 
 ## User Experience (UX)
 
@@ -74,7 +77,7 @@ Modify the selectAnswer function to ensure that the correct button element (not 
     - Hover.css was used on the Social Media icons in the footer to add the float transition while being hovered over.
 2. [Font Awesome:](https://fontawesome.com/)
     - Font Awesome was used on all pages throughout the website to add icons for social media tags/links.
-3. [Git](https://git-scm.com/)
+3. [Git:](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 4. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
@@ -82,8 +85,10 @@ Modify the selectAnswer function to ensure that the correct button element (not 
     - Used as my IDE initially as struggled to use codeanywhere. Changed shortly after, switching to gitpod.
 6. [Favicon:](https://favicon.io/) 
     - Used to download favicon for each page.
-7. [GitPod](https://gitpod.io/workspaces)
+7. [GitPod:](https://gitpod.io/workspaces)
     - Moved to gitpod shortly after starting project to use as my main IDE.
+8. [Json:](https://www.json.org/json-en.html)
+    - Used to store the quiz questions for the app.
 
 ## Testing
 
@@ -98,6 +103,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 ![JavaScript Validator](https://jshint.com/)
 ![JS screenshots](/assets/docs/jsval1.png)
 ![JS screenshots](/assets/docs/jsval2.png)
+
+#### All pages have been revalidated, and all passed after resubmission work.
 
 ### Testing User Stories from User Experience (UX) Section
 
@@ -229,7 +236,7 @@ Click ![Here](https://help.github.com/en/github/creating-cloning-and-archiving-r
 
 ## Credits
 
-1. Microsoft paint, to adjust the photos in the home page gallery to all be the right size.
+1. Microsoft paint, to adjust the photos in the home page gallery.
 
 ### Code
 
@@ -355,6 +362,8 @@ Caviar question
 3.	https://www.newsweek.com/giant-catfish-caught-fisherman-battle-1787592 Catfish 
 4.	https://www.nationalfisherman.com/northeast/new-england-council-looks-to-next-monkfish-changes Monkfish
 5.	https://www.iucn.org/content/sturgeon-more-critically-endangered-any-other-group-species Sturgeon
+
+#### Quiz was dropped down to 4 options so have stopped using 1 picture from each question.
 
 - The background pictures were also taken from google image search
 1. https://stock.adobe.com/uk/search?k=%22vegetable+frame%22  - landscape background
