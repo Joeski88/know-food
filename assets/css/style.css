@@ -16,35 +16,47 @@ header {
     position: fixed;
     box-shadow: 0 4px 4px #bbc075;
     z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    object-fit: contain;
+    flex-shrink: 1;
+    padding: 10px 20px;
 }
+
 
 .header img {
     float: left;
-    width: 100px;
-    height: 100px;
+    max-height: 50px;
     background: #555;
-  }
+    border-radius: 3px;
+    max-width: 50px;
+    margin-right: 15px;
+}
   
   .header h1 {
     position: relative;
-    top: 18px;
+    top: 20px;
     left: 10px;
+    margin: 0;
+    white-space: nowrap;
   }
 
 /*quiz entry button styling*/
 /*center the quiz entry button*/
 
 .button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
+    position: relative;
+    display: block; 
+    margin: 20px auto;
     background-color: #1e6828;
     color: #fff;
-    padding: 10px 20px;
+    padding: 12px 24px;
     border-radius: 12px;
-    border: #2ddb44;
+    border: 2px solid #2ddb44;
+    text-align: center;
+    max-width: 200px; 
 }
 
 /*basic color scheme*/
@@ -52,11 +64,14 @@ header {
 body {
     display: flex;
     justify-content: center;
-    background-image: url('../images/background.png');
+    align-items: center;
+    background-image: url(../images/background.png);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 4rem;
-    min-height: 100vh;
+    min-height: 100vh; /* Ensures the background covers the entire height of the viewport */
+    width: 100vw; /* Ensures the background covers the full width of the viewport */
+    margin: 0;
+    padding: 0;
 }
 
 /*header title styling*/
@@ -81,11 +96,15 @@ h1 {
 
 .rules {
     color: #ffffff;
-    margin-top: 20vh;
-    display: flex;
+    margin-top: 10vh;
+    display: block; 
     background-color: burlywood;
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
+    text-align: center;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .rulelist {
@@ -124,19 +143,21 @@ img {
 /*quiz styling*/
 
 .app {
-    background: white;
-    margin-top: 22vh;
-    margin-bottom: 22vh;
-
-    /* styling for background picture*/
-
-    z-index: 2;
-    background-color: #ffffff;
-    color: #fff;
-    border: 2px;
-    border-color: yellow;
-    padding: 10px 20px;
+    width: 90vw; /* 90% of the viewport width */
+    max-width: 700px; /* Max width for large screens */
+    height: 90vw; /* Square shape by setting height to 90% of the viewport width */
+    max-height: 550px; /* Max height for large screens */
+    background: rgb(255, 255, 255);
+    border: 2px solid yellow;
+    padding: 15px; /* Reduced padding for better fit */
     border-radius: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden; /* Prevent any content overflow */
+    box-sizing: border-box; /* Make sure padding is included in width/height */
 }
 
 .app h1 {
@@ -159,20 +180,26 @@ img {
     text-align: center;
 }
 
+/* Button Styles */
 .btn {
     background: white;
     color: #413d3d;
     font-weight: 500;
-    width: 100%;
+    width: 100%; /* Make the button take up full width in grid cell */
+    max-width: 150px; /* Maximum button width */
+    min-width: 100px; /* Minimum button width */
     border: none;
     padding: 10px;
-    margin: 10px 0;
-    text-align: left;
+    text-align: center;
     border-radius: 12px;
-    cursor: crosshair;
+    cursor: pointer;
     transition: all 0.3s;
-    max-width: 15rem;
-    min-width: 10rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
 }
 
 .btn:hover:not([disabled]) {
@@ -184,12 +211,23 @@ img {
     cursor: no-drop;
 }
 
+.answerImg {
+    max-width: 100%;
+    max-height: 100%; /* Make sure images stay within the app container */
+    height: auto;
+    border-radius: 20px;
+    object-fit: contain; /* Ensures images scale without distortion */
+}
+
 #answer-buttons {
-    max-width: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Create two equal columns */
+    gap: 10px; /* Space between the buttons */
+    justify-items: center; /* Center the content inside each grid item */
+    align-items: center; /* Align items vertically in the center */
+    max-width: 100%;
+    margin: 0 auto; /* Center the grid container itself */
+    padding: 10px 0;
 }
 
 #next-btn {
@@ -201,7 +239,7 @@ img {
     padding: 10px;
     margin: 20px auto 0;
     border-radius: 4px;
-    cursor: crosshair;
+    cursor: pointer;
     display: none;
 }
 
@@ -228,6 +266,11 @@ img {
 
 
 @media screen and (max-width: 765px) {
+
+    .app {
+        height: 80vw; /* Reduce height on small screens to fit better */
+    }
+    
     .image1 {
         width: 100%;
         background-position: center;
@@ -237,12 +280,37 @@ img {
         max-height: 1000px;
     }
 
-    .button {
-        position: absolute;
+    .rules {
+        margin-top: 5vh;
+        padding: 10px;
     }
+
+    .button {
+        width: 80%;
+        max-width: 150px;
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .header img {
+        margin-left: 10px;
+    } 
 
     h3 {
         margin-left: 15px;
+    }
+
+    #answer-buttons {
+        grid-template-columns: 1fr; /* Stack the buttons in one column */
+    }
+
+    .btn {
+        width: 100%; /* Button takes up full width */
+        max-width: none; /* Remove any width limits */
+    }
+
+    .answerImg {
+        max-height: 8rem; /* Reduce image size on smaller screens */
     }
 }
 
@@ -286,13 +354,6 @@ img {
         max-width: none;
         justify-content: center;
     }
-}
-
-    .answerImg {
-        width: 100%;
-        border-radius: 20px;
-        max-height: 10rem;
-        min-width: 10rem;
 }
 
     h3 {
