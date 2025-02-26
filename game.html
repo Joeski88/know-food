@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Test your food knowledge with this food picture quiz">
-    <meta name="keywords" content="food, quiz, game, fun, fish, meat, chef.">
+    <meta name="keywords" content="food, quiz, game, fun, fish, meat, chef">
     <meta name="author" content="Joe Howley">
 
     <title>KnowFood?</title>
@@ -21,36 +21,31 @@
     <header>
         <nav>
             <div class="header">
-                <img src="assets/images/knowfoodlogo.png" class="logo" aria-label="knowfoodlogo">
+                <img src="assets/images/knowfoodlogo.png" class="logo" alt="KnowFood Logo">
                 <h1>Know Food?</h1>
             </div>
         </nav>
     </header>
+
     <main>
         <div class="app">
-
-            <h1>You think you KnowFood?</h1>
+            <h2>You think you KnowFood?</h2> <!-- Changed from h1 for better SEO structure -->
             <div class="quiz">
-                <h2 id="question">Question goes here</h2>
+                <h3 id="question">Question goes here</h3> <!-- Changed from h2 to h3 for better heading hierarchy -->
                 <div id="answer-buttons">
                     <button class="btn">Answer 1</button>
-                    <span class="text-answer"></span>
                     <button class="btn">Answer 2</button>
-                    <span class="text-answer"></span>
                     <button class="btn">Answer 3</button>
-                    <span class="text-answer"></span>
                     <button class="btn">Answer 4</button>
-                    <span class="text-answer"></span>
                 </div>
-                <button id="next-btn" class="unhide">Next</button>
+                <button id="next-btn" class="unhide" aria-hidden="true">Next</button>
             </div>
         </div>
         <script src="assets/js/script.js"></script>
     </main>
+
     <footer>
-        <h3>
-            What did the chief do when he lost an eye? He became a chef.....
-        </h3>
+        <h3>What did the chef do when he lost an eye? He became a chef...</h3>
     </footer>
 </body>
 

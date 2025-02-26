@@ -6,6 +6,19 @@ A fun, light hearted educational food quiz for everyone.
 
 ![Mockup](/assets/docs/Screenshot%202024-02-29%20205528.png)
 
+## Resubmission Summary
+
+This is a resubmission, to combat and improve this project based on the feedback given I made several changes to the app. 
+    - Exported the questions into a Json file and imported them in.
+    - Turned the quiz into an object using the 'this' keyword. 
+    - Edited the styling and made the general aesthetics better and more improved.
+    - Added a message displayed to the player at the end of the quiz tht changes depending on their score.
+
+During this process, as you can imagine, lots of bugs were thrown up. Here is an explanation on the biggest and main issues I came accross.
+    - The score was not totaling properly after all of my refactoring, The issue occurs because you are attaching the click event listener to the entire button element, which contains an <img> and <span> element. When you click on the image inside the button, e.target refers to the image, not the button.
+##### Solution
+Modify the selectAnswer function to ensure that the correct button element (not its child elements) is captured when clicked
+
 ## User Experience (UX)
 
 -   ### User stories

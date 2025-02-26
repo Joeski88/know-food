@@ -46,7 +46,7 @@ header {
 /*quiz entry button styling*/
 /*center the quiz entry button*/
 
-.button {
+.button-link {
     position: relative;
     display: block; 
     margin: 20px auto;
@@ -81,7 +81,6 @@ h1 {
     display: flex;
     justify-content: left;
     margin-left: 10px;
-    text-shadow: #c2bfbf;
 }
 
 .logo {
@@ -113,7 +112,7 @@ h1 {
 
 /*footer text styling*/
 
-h3 {
+h3, .footer {
     display: flex;
     justify-content: center;
     margin-top: 5vh;
@@ -127,7 +126,6 @@ footer {
     width: 100%;
     height: 12vh;
     border-radius: 5px;
-    border-color: #ffffff, 4px;
     position: fixed;
     bottom: 0px;
     box-shadow: 8px 4px 4px 4px #bbc075;
@@ -145,32 +143,35 @@ img {
 .app {
     width: 90vw; /* 90% of the viewport width */
     max-width: 700px; /* Max width for large screens */
-    height: 90vw; /* Square shape by setting height to 90% of the viewport width */
-    max-height: 550px; /* Max height for large screens */
+    height: auto; /* Allow flexible height */
+    min-height: 500px; /* Prevent shrinking */
     background: rgb(255, 255, 255);
     border: 2px solid yellow;
-    padding: 15px; /* Reduced padding for better fit */
+    padding: 20px; /* More padding for better spacing */
     border-radius: 12px;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    overflow: hidden; /* Prevent any content overflow */
-    box-sizing: border-box; /* Make sure padding is included in width/height */
+    overflow: visible; /* Ensure space for dynamic elements */
+    transition: height 0.3s ease-in-out; /* Smooth height adjustment */
 }
 
-.app h1 {
+.app h3 {
     font-size: 25px;
     color: rgb(43, 129, 63);
     font-weight: 600;
     border-bottom: 1px solid #333;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
     text-align: center;
+    margin-top: 20px;
 }
 
-.quiz {
-    padding: 20px 0;
+h3, .question {
+    font-size: medium;
+    font-weight: bold;
+    margin-bottom: 1vw;
 }
 
 .quiz h2 {
@@ -182,24 +183,20 @@ img {
 
 /* Button Styles */
 .btn {
-    background: white;
-    color: #413d3d;
-    font-weight: 500;
-    width: 100%; /* Make the button take up full width in grid cell */
-    max-width: 150px; /* Maximum button width */
-    min-width: 100px; /* Minimum button width */
-    border: none;
-    padding: 10px;
-    text-align: center;
+    font-size: medium;
+    width: 75%;
+    max-width: 220px;
+    min-width: 140px;
+    padding: 5px;
+    margin: 7px;
     border-radius: 12px;
     cursor: pointer;
     transition: all 0.3s;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 5px;
+    /*to remove annoying black line around the buttons */
+    border: none;
+    outline: none;
+    box-shadow: none !important; 
 }
 
 .btn:hover:not([disabled]) {
@@ -212,22 +209,20 @@ img {
 }
 
 .answerImg {
-    max-width: 100%;
-    max-height: 100%; /* Make sure images stay within the app container */
+    width: 100%;
     height: auto;
+    max-height: 200px;
     border-radius: 20px;
-    object-fit: contain; /* Ensures images scale without distortion */
+    object-fit: contain;
 }
-
+/* Use grid layout for picture quiz display */
 #answer-buttons {
-    display: grid; /* Use grid layout */
-    grid-template-columns: repeat(2, 1fr); /* Create two equal columns */
-    gap: 10px; /* Space between the buttons */
-    justify-items: center; /* Center the content inside each grid item */
-    align-items: center; /* Align items vertically in the center */
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    justify-items: center;
+    align-items: center;
     max-width: 100%;
     margin: 0 auto; /* Center the grid container itself */
-    padding: 10px 0;
 }
 
 #next-btn {
@@ -261,16 +256,22 @@ img {
     display: block;
 }
 
-
 /*media queries*/
 
+/* Responsive adjustments for larger screens */
+@media (min-width: 1024px) {
+    .app {
+        width: 60vw; /* Larger on desktops */
+        max-width: 700px;
+    }
+
+    .answerImg {
+        width: 100%; /* Increase size on larger screens */
+        max-height: 280px;
+    }
+}
 
 @media screen and (max-width: 765px) {
-
-    .app {
-        height: 80vw; /* Reduce height on small screens to fit better */
-    }
-    
     .image1 {
         width: 100%;
         background-position: center;
@@ -297,11 +298,8 @@ img {
     } 
 
     h3 {
+        margin-top: 15px;
         margin-left: 15px;
-    }
-
-    #answer-buttons {
-        grid-template-columns: 1fr; /* Stack the buttons in one column */
     }
 
     .btn {
@@ -334,6 +332,7 @@ img {
 
     h3 {
         margin-left: 15px;
+        margin-top: 15px;
     }
 }
 
@@ -358,4 +357,5 @@ img {
 
     h3 {
         margin-left: 15px;
+        margin-top: 15px;
 }

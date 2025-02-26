@@ -1,17 +1,12 @@
 //* Create function for main quiz
-
 var Quiz = function(){
-
-    this.initialised = false;
+    this.initialised = false;      // <-- use this so we only add the event listener once
 
     this.timeSinceLastFrame = new Date().getTime();
     this.fps = 30;
-
     this.timeBetweenFrames = 1/this.fps;
     this.lastCalledTime = null;
-
     this.delta = null;
-
     this.time = 0;
 
     /*quiz questions and answers*/
@@ -22,8 +17,6 @@ var Quiz = function(){
     this.nextButton = null;
 
     this.currentQuestionIndex = 0;
-    this.currentQuestionNumber = 0;
-
     this.score = 0;
     this.randomQuizQuestions = [];
 
@@ -31,115 +24,100 @@ var Quiz = function(){
 };
 
 /* added new function to call json data */
-
 Quiz.prototype.randomiseQuestions = function(json_data){
     //convert data to list
     var result = [];
     for(var i in json_data) {
         result.push([json_data [i]]);
     }
-
-    console.log(result)
-
+    // randomize and slice top 10
     result = result.sort(() => 0.5 - Math.random()).slice(0,10);
-    return result
+    return result;
 };
 
 /* function to start quiz*/
-
 Quiz.prototype.startQuiz = function(json_data) {
-    var game = this;
+    // Setup the game each time startQuiz is called
     this.currentQuestionIndex = 0;
     this.questions = json_data;
-    console.log("Quiz game started", json_data)
-
     this.score = 0;
 
+    // Get Next Button
     this.nextButton = document.getElementById("next-btn");
     this.nextButton.innerHTML = "Next";
-    this.nextButton = document.getElementById("next-btn");
-        console.log("Next button", game.nextButton)
 
-        //add error check for next button
-        if (game.nextButton != null){
-            //add event listener to next button
-            game.nextButton.addEventListener("click", () =>{
-                if (game.currentQuestionIndex < game.randomQuizQuestions.length) {
-                    game.currentQuestionNumber++;
-                    console.log(game.currentQuestionIndex, game.randomQuizQuestions.length);
-                    game.handleNextButton();    
-                } else {
-                    game.startQuiz(json_data);
-                }
-            });
-        }
-        this.randomQuizQuestions = this.randomiseQuestions(this.questions);
-        this.showQuestion();
-}
+    // IMPORTANT: this fixed the issue with the question number increasing by 2 after the first round.
+    //  only add the event listener once:
+    if (!this.initialised) {
+        this.initialised = true;  // guard so we don't add listener again
+        this.nextButton.addEventListener("click", () => {
+            if (this.currentQuestionIndex < this.randomQuizQuestions.length) {
+                // Just handle the next question
+                this.handleNextButton();
+            } else {
+                // Otherwise we can restart quiz
+                this.startQuiz(json_data);
+            }
+        });
+    }
+
+    // Randomize questions and display
+    this.randomQuizQuestions = this.randomiseQuestions(this.questions);
+    this.showQuestion();
+};
 
 Quiz.prototype.showQuestion = function() {
     this.resetState();
+    // pick question
     this.currentQuestion = this.randomQuizQuestions[this.currentQuestionIndex][0];
 
     var questionNo = this.currentQuestionIndex + 1;
-    console.log("Question:", this.currentQuestion, this.currentQuestion.question, this.currentQuestion.question);
     this.questionElement = document.getElementById("question");
-    this.questionElement.innerHTML = questionNo + "." + this.currentQuestion.question;
+    this.questionElement.innerHTML = questionNo + ". " + this.currentQuestion.question;
 
-    var game= this;
     this.currentQuestion.answers.forEach(answer => {
         var button = document.createElement("button");
-        console.log("answer", answer, answer.image);
-
         if (answer.correct) {
             button.dataset.correct = answer.correct;
         }
 
         var buttonImage = document.createElement("img");
-
-        console.log("answer", answer, answer.image);
-
         buttonImage.src = 'https://joeski88.github.io/know-food/' + answer.image;
         buttonImage.alt = 'food';
-
         buttonImage.classList.add("answerImg");
         button.classList.add("btn");
 
         button.appendChild(buttonImage);
 
         const buttonText = document.createElement('span');
-
         buttonText.classList.add('text-answer');
         buttonText.textContent = answer.text;
-
+        buttonText.style.display = 'none';
         button.appendChild(buttonText);
 
         this.answerButtons = document.getElementById("answer-buttons");
         this.answerButtons.appendChild(button);
 
-        buttonText.style.display = 'none';
-
-        button.addEventListener("click", this.selectAnswer);
-
+        // NOTE: Use arrow function so "this" remains to be our Quiz instance
+        button.addEventListener("click", (e) => this.selectAnswer(e));
     });
-}
+};
 
 /* add functions to determine if answers are correct */
-
 Quiz.prototype.resetState = function() {
     this.nextButton.style.display = 'none';
 
-    answerButtons = document.getElementById("answer-buttons")
+    let answerButtons = document.getElementById("answer-buttons");
     while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
     }
-}
+};
 
 Quiz.prototype.selectAnswer = function(e) {
     let selectedBtn = e.target;
 
-    // If the clicked element is an image inside the button, get the parent button
-    if (selectedBtn.tagName === "IMG") {
+    // If the clicked element is an image, get the parent button
+    if (selectedBtn.tagName === "IMG" ) {
         selectedBtn = selectedBtn.parentElement;
     }
 
@@ -147,12 +125,12 @@ Quiz.prototype.selectAnswer = function(e) {
 
     if (isCorrect) {
         selectedBtn.classList.add("correct");
-        game.score++;
+        this.score++;
     } else {
         selectedBtn.classList.add("incorrect");
     }
 
-    Array.from(game.answerButtons.children).forEach(button => {
+    Array.from(this.answerButtons.children).forEach(button => {
         if (button.dataset.correct === "true") {
             button.classList.add("correct");
         }
@@ -164,22 +142,20 @@ Quiz.prototype.selectAnswer = function(e) {
         textAnswers[index].style.display = 'block';
     }
 
-    game.nextButton.style.display = 'block';
+    this.nextButton.style.display = 'block';
 };
-
 
 /* function to display score at the end of quiz and to restart quiz */
 Quiz.prototype.showScore = function() {
     this.resetState();
-    this.questionElement.innerHTML = `you scored ${this.score} out of ${this.randomQuizQuestions.length}!`;
+    this.questionElement.innerHTML = `YOU SCORED ${this.score} OUT OF ${this.randomQuizQuestions.length}!`;
     this.questionElement.innerHTML += "<br>";
     this.questionElement.innerHTML += this.checkScore();
-    this.nextButton.innerHTML = "Play Again";
+    this.nextButton.innerHTML = "Play Again?";
     this.nextButton.style.display = "block";
 };
 
 Quiz.prototype.handleNextButton = function() {
-
     this.currentQuestionIndex++;
 
     if (this.currentQuestionIndex < 10) {
@@ -189,17 +165,7 @@ Quiz.prototype.handleNextButton = function() {
     }
 };
 
-var game = null;
-
-window.onload = function () {
-    if (game == null){
-        game = new Quiz();
-    }
-fetchJSONData();
-};
-
 /*define function to pull json data*/
-
 function fetchJSONData() {
     fetch('assets/questions.json')
         .then((res) => {
@@ -210,25 +176,28 @@ function fetchJSONData() {
         })
         .then((data) => game.startQuiz(data))
         .catch((error) => console.error("Unable to fetch data:", error));
-};
+}
+
 /* Create switch statement to provide user with comment upon finishing quiz */
 Quiz.prototype.checkScore = function() {
     var score = this.score;
 
     switch(true){
         case (score <= 3):
-            console.log("low score", score)
             return "Might wanna watch some more cooking shows!!";
-            break
-
         case (score > 3 && score <= 6):
-                console.log("Mid", score)
-            return "Not bad, but I'd suggest maybe actually reading the cook books instead of just looking at the pictures";
-            break;
-
+            return "Not bad, but I'd suggest maybe actually reading the cook books instead of just looking at the pictures.";
         case (score > 6 && score <= 10):
-                console.log("Master Chef!", score)
-            return "Damn, you are a MASTERchef!! You definitly KNOWFOOD!";
-            break;
+            return "Damn, you are a MASTERchef!! You definitely KNOWFOOD!";
     }
+};
+
+var game = null;
+
+window.onload = function () {
+    if (game == null){
+        game = new Quiz();
+    }
+    
+    fetchJSONData();
 };
