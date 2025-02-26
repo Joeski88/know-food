@@ -136,8 +136,13 @@ Quiz.prototype.resetState = function() {
 }
 
 Quiz.prototype.selectAnswer = function(e) {
-    const selectedBtn = e.target; // removed parent node from here, fixed bug but creted a new one.
-    console.log(e)
+    let selectedBtn = e.target;
+
+    // If the clicked element is an image inside the button, get the parent button
+    if (selectedBtn.tagName === "IMG") {
+        selectedBtn = selectedBtn.parentElement;
+    }
+
     const isCorrect = selectedBtn.dataset.correct === "true";
 
     if (isCorrect) {
@@ -153,16 +158,15 @@ Quiz.prototype.selectAnswer = function(e) {
         }
         button.disabled = true;
     });
-    
-    const textAnswers = document.getElementsByClassName('text-answer');
 
+    const textAnswers = document.getElementsByClassName('text-answer');
     for (let index = 0; index < textAnswers.length; index++) {
-        console.log(textAnswers[index].innerHTML);
         textAnswers[index].style.display = 'block';
     }
 
     game.nextButton.style.display = 'block';
 };
+
 
 /* function to display score at the end of quiz and to restart quiz */
 Quiz.prototype.showScore = function() {
