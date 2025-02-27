@@ -22,6 +22,8 @@ Modify the selectAnswer function to ensure that the correct button element (not 
 - The other big issue I had was that when you finished the quiz and tried to press the play again button, it would increment in 2's, for eg; question number 1, 3, 5, 7, 9 were asked, so only 5 questions instead of 10, an then, dropped down each time you play until it just broke. This was due to multiple event listeners being called at the same time. After much head scratching, eventually I managed to fix it by adding a 'this.initialised' to ensure the event listener for the Next button is only added once. Also, removed the extra increment of any “question number” inside the click handler. I already rely on this.currentQuestionIndex, so I increment that once in handleNextButton().
 In short, Javascript let's you keep adding event listeners as much as you want, so there are two click events on the next after the first round etc., hence why it was jumping through the questions.
 
+---
+
 ## User Experience (UX)
 
 -   ### User stories
@@ -49,6 +51,8 @@ In short, Javascript let's you keep adding event listeners as much as you want, 
     -   #### Imagery
         -   The whole quiz is based on visual impact. Images used are bright, clear and colourful.
 
+---
+
 ## Features
 
 -   Responsive on all device sizes.
@@ -63,6 +67,8 @@ In short, Javascript let's you keep adding event listeners as much as you want, 
 -   Score totalling with javascript code. 
 -   ![Function](/assets/docs/function3.png)
 
+---
+
 ## Technologies Used
 
 ### Languages Used
@@ -70,6 +76,8 @@ In short, Javascript let's you keep adding event listeners as much as you want, 
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 -   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
+---
 
 ### Frameworks, Libraries & Programs Used
 
@@ -90,6 +98,8 @@ In short, Javascript let's you keep adding event listeners as much as you want, 
 8. [Json:](https://www.json.org/json-en.html)
     - Used to store the quiz questions for the app.
 
+---
+
 ## Testing
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
@@ -104,7 +114,11 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 ![JS screenshots](/assets/docs/jsval1.png)
 ![JS screenshots](/assets/docs/jsval2.png)
 
+---
+
 #### All pages have been revalidated, and all passed after resubmission work.
+
+---
 
 ### Testing User Stories from User Experience (UX) Section
 
@@ -148,12 +162,16 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
         1. The user would already be comfortable with the website layout and can easily navigate their way through the site to enojoy the quiz as many times as they want to.
         2. Because the user is a frequent user, they will quickly see if there are new questions and pictures updated on the quiz. This will be a future feature, as i have only done a starting stock of 15 questions (45 different pictures).
 
+---
+
 ### Further Testing
 
 - The Website was tested on Google Chrome, Microsoft Edge and Safari browsers.
 - The website was viewed on a variety of devices such as Desktop, Laptop, iPhone13, iPhone14 & iPhone15 and galaxy fold.
 - A large amount of testing was done to ensure that all pages were linking correctly.
 - Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+
+---
 
 ### Known Bugs
 
@@ -171,6 +189,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 - Red background appears when certain area is clicked
 - ![Screenshot](/assets/docs/redbkgrndbug.png)
 
+---
+
 ### Future Features
 
 -   Continue adding picture questions to the pool of questions. continue randomising. 
@@ -178,6 +198,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   Change the pictures of the existing questions to add some more variation and aid revisitability.
 -   Add a leaderboard, and make the score of your answer higher or lower depending on the difficulty of the question.
 -   Add a timer to each question, that times out once finished and moves automatically onto the next question.
+
+---
 
 ## Deployment
 
@@ -189,6 +211,8 @@ The site has been deployed to be hosted on GitHub pages. (please see the live li
 4. Use the Select source drop-down menu to select main branch.
 5. Click Save
 
+---
+
 ### GitHub Pages
 
 The project was deployed to GitHub Pages using the following steps...
@@ -199,6 +223,8 @@ The project was deployed to GitHub Pages using the following steps...
 4. Under "Source", click the dropdown called "None" and select "Master Branch".
 5. The page will automatically refresh.
 6. Scroll back down through the page to locate the now published site ![link](https://joeski88.github.io/know-food/) in the "GitHub Pages" section.
+
+---
 
 ### Forking the GitHub Repository
 
@@ -234,15 +260,21 @@ $ git clone https://github.com/Joeski88/know-food.git
 
 Click ![Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
+---
+
 ## Credits
 
 1. Microsoft paint, to adjust the photos in the home page gallery.
+
+---
 
 ### Code
 
 1. Codeanywhere(at the very start).
 2. github.
 3. VS Code.
+
+---
 
 ### Content
 
@@ -256,12 +288,16 @@ Dragon fruit question
 4.	https://health.clevelandclinic.org/what-is-jackfruit-and-is-it-healthy kiwi
 5.	https://www.bhg.com/how-to-grow-dragon-fruit-from-seed-7371642 dragon fruit
 
+---
+
 Scotch bonnet question
 
 1.	https://www.aglugofoil.com/2021/07/padron-peppers-tapas-recipe.html padrons
 2.	https://vegboxfresh.co.uk/products/scotch-bonnet-chilli-peppers scotch bonnet
 3.	https://www.chilipeppermadness.com/chili-pepper-types/sweet-mild-chili-peppers/sweet-bell-peppers/ 
 4.	https://www.finefoodspecialist.co.uk/romano-red-pepper-1kg?gad_source=1&gclid=Cj0KCQiAoKeuBhCoARIsAB4Wxtec2c7KWTVmlMFSd2b_iL6i40lp45NIunsabM5zJdhdZ9tplzTuFLMaAoq4EALw_wcB 
+
+---
 
 All spice question
 
@@ -271,9 +307,13 @@ All spice question
 4.	https://www.worldofspice.co.uk/blog/what-is-the-difference-between-mixed-spice-and-allspice/ 
 5.	https://www.bbcgoodfood.com/howto/guide/health-benefits-cinnamon 
 
+---
+
 Pasta question
 
 1.	https://www.nonnabox.com/types-of-pasta/ (for all pictures)
+
+---
 
 Cornish yarg question
 
@@ -283,6 +323,8 @@ Cornish yarg question
 4.	https://www.saps.org.uk/teaching-resources/resources/869/investigating-leaf-adaptations-why-do-nettles-sting/ nettle leaf
 5.	https://www.binbags.com/black-refuse-sacks-black-bin-bags/  bin bag
 
+---
+
 Tomahawk question
 
 1.	https://www.thecornishfoodboxcompany.co.uk/christmas-food-drink/pork-beef-lamb/gammon-joints/cornish-free-range-belly-pork-slab-medium-2kg.html?utm_campaign=performance_max&utm_medium=cpc&utm_source=google&utm_term=&utm_campaign=Sales-Performance+Max+-+All+Products&utm_source=adwords&utm_medium=ppc&hsa_acc=2305395064&hsa_cam=18956597407&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQiAoKeuBhCoARIsAB4WxtfXYWJYHqNP_QbortUYJR8Oa1uZWSYyKUOxQoS9FLrmy7IoRSBTS5saAt0hEALw_wcB pork belly
@@ -290,6 +332,8 @@ Tomahawk question
 3.	https://www.eatgreatmeat.co.uk/product/osso-buco-beef-shin-on-the-bone-1kg-pack/?gad_source=1&gclid=Cj0KCQiAoKeuBhCoARIsAB4WxtfBxxpbZw-BsoJdPJQjqACToCClpOgS3EQSNjWET-b_ZeU2hDU2D5EaAvagEALw_wcB osso buco
 4.	https://mytbones.com/product/t-bone-steak/ tbone
 5.	https://www.farmandfork.co.uk/product/28-day-dry-aged-tomahawk-steak/ tomahawk
+
+---
 
 Saffron flower question
 
@@ -299,6 +343,8 @@ Saffron flower question
 4.	https://www.gardenersbasics.com/tools/blog/how-to-grow-poppies-indoors Poppy
 5.	https://weedwise.conservationdistrict.org/cemo6 Knapweed
 
+---
+
 Miso question
 
 1.	https://www.sugarfit.com/blog/is-soya-bean-good-for-diabetes/ Soya Beans
@@ -306,6 +352,8 @@ Miso question
 3.	https://www.theguardian.com/food/2023/jan/18/beans-in-toast-uk-should-switch-to-broad-bean-bread-say-researchers Broad Beans
 4.	https://www.limoncello.co.uk/blogs/news/exploring-the-richness-of-italian-borlotti-beans-a-true-culinary-delight Borlotti Beans
 5.	https://www.stylecraze.com/articles/amazing-benefits-of-kidney-beans-for-skin-hair-and-health/ Kidney Beans
+
+---
 
 Tuber question
 
@@ -315,6 +363,8 @@ Tuber question
 4.	https://parade.com/23643/lindsaylowe/what-the-heck-is-romanesco-and-how-do-you-cook-it/ Romanesco Cauliflower
 5.	https://www.thekitchn.com/whats-the-difference-between-white-and-yellow-corn-233298 Corn
 
+---
+
 Langoustine question
 
 1.	https://foodandtravel.com/food/in-season/langoustine Langoustine
@@ -323,13 +373,17 @@ Langoustine question
 4.	https://chefsmandala.com/archaeology-seafood-crab/ Crab
 5.	https://shiki.sg/product/atlantic-wild-jumbo-prawn-langostino-super-jumbo-xl-salvaje-2kg-box-size-8-12/ Jumbo Prawn
 
+---
+
 Macadamia question
 
 1.	https://www.exportersindia.com/product-detail/vacuum-hazelnuts-5795675.htm Hazelnut
 2.	https://www.medicalnewstoday.com/articles/325000 Brazil Nut 
 3.	https://balconygardenweb.com/how-to-grow-a-cashew-tree-growing-cashew-nuts/  Cashew
 4.	https://www.marthastewart.com/8262975/macadamia-nuts-health-benefits-uses Macadamia
-5.	https://www.britannica.com/plant/chickpea Chickpeas 
+5.	https://www.britannica.com/plant/chickpea Chickpeas
+
+---
 
 Tahini question
 
@@ -339,6 +393,8 @@ Tahini question
 4.	https://www.bhg.com/recipes/healthy/eating/flaxseed/ Linseeds
 5.	https://www.tastingtable.com/1049109/most-of-the-worlds-sesame-seeds-come-from-this-country/ Sesame
 
+---
+
 Bearnaise question 
 
 1.	https://www.gurneys.com/product/sage Sage
@@ -346,6 +402,8 @@ Bearnaise question
 3.	https://www.thespicehouse.com/blogs/news/rosemary-substitute Rosemary
 4.	https://recipes.net/articles/tarragon-substitute/ Tarragon
 5.	https://www.kerrysfresh.co.uk/product/thyme/ Thyme
+
+---
 
 Apple question 
 
@@ -355,6 +413,8 @@ Apple question
 4.	https://www.floraqueen.com/blog/apple-blossom-michigan-state-flower-fragranced-beauty Apple 
 5.	https://seed2plant.in/products/cherry-blossom-live-plant Cherry
 
+---
+
 Caviar question 
 
 1.	https://pngtree.com/freebackground/salmon-is-swimming-under-water_2649320.html Salmon
@@ -363,11 +423,9 @@ Caviar question
 4.	https://www.nationalfisherman.com/northeast/new-england-council-looks-to-next-monkfish-changes Monkfish
 5.	https://www.iucn.org/content/sturgeon-more-critically-endangered-any-other-group-species Sturgeon
 
-#### Quiz was dropped down to 4 options so have stopped using 1 picture from each question.
+---
 
-- The background pictures were also taken from google image search
-1. https://stock.adobe.com/uk/search?k=%22vegetable+frame%22  - landscape background
-2. https://depositphotos.com/photos/food-border.html?sh=05f3a0cdf2785450d953babb6dcb6e79b47979a0 – portrait background
+#### Quiz was dropped down to 4 options so have stopped using 1 picture from each question.
 
 - The base of the quiz was done through a youtube Account walkthrough. It was turned into a picture quiz after, therefore needing to make many changes to make the code my own. 
 
@@ -381,12 +439,18 @@ GreatStack you tube account video; https://www.youtube.com/watch?v=PBcqGxrr9g8&t
 
 - Used this page to help with the terminology used when programming javascript; https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
+---
+
 ### Media
 
 -   All images were found via searches on google images.
+
+---
 
 ### Acknowledgements
 
 1. Page called https://developer.mozilla.org/en-US/ was very helpful with terminology.
 2. https://www.w3schools.com/css/default.asp very helpful link to help with code issues.
 3. https://www.canva.com/ The background image was designed on Canva. 
+
+---

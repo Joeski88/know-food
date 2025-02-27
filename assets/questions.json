@@ -83,9 +83,9 @@
                 "text": "Paccherri"
             },
             {
-                "image": "assets/images/q4/penne.jpg",
+                "image": "assets/images/q4/tortellini.jpg",
                 "correct": false,
-                "text": "Penne"
+                "text": "Tortellini"
             },
             {
                 "image": "assets/images/q4/ravioli.jpg",
@@ -300,7 +300,7 @@
         ]
     },
     {
-        "question": "What herb makes b\u00e9arnaise?",
+        "question": "What herb makes bearnaise?",
         "answers": [
             {
                 "image": "assets/images/q13/parsley.jpg",
@@ -338,9 +338,9 @@
                 "text": "Cherry"
             },
             {
-                "image": "assets/images/q14/orange.jpg",
+                "image": "assets/images/q14/raspberry.jpg",
                 "correct": false,
-                "text": "Orange"
+                "text": "Raspberry"
             },
             {
                 "image": "assets/images/q14/peach.jpg",

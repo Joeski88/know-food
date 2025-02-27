@@ -35,21 +35,21 @@ Quiz.prototype.randomiseQuestions = function(json_data){
     return result;
 };
 
-/* function to start quiz*/
+/* Function to start quiz*/
 Quiz.prototype.startQuiz = function(json_data) {
     // Setup the game each time startQuiz is called
     this.currentQuestionIndex = 0;
     this.questions = json_data;
     this.score = 0;
 
-    // Get Next Button
+    // Get next button
     this.nextButton = document.getElementById("next-btn");
     this.nextButton.innerHTML = "Next";
 
     // IMPORTANT: this fixed the issue with the question number increasing by 2 after the first round.
     //  only add the event listener once:
     if (!this.initialised) {
-        this.initialised = true;  // guard so we don't add listener again
+        this.initialised = true;  // guard so don't add listener again
         this.nextButton.addEventListener("click", () => {
             if (this.currentQuestionIndex < this.randomQuizQuestions.length) {
                 // Just handle the next question
@@ -98,12 +98,11 @@ Quiz.prototype.showQuestion = function() {
         this.answerButtons = document.getElementById("answer-buttons");
         this.answerButtons.appendChild(button);
 
-        // NOTE: Use arrow function so "this" remains to be our Quiz instance
         button.addEventListener("click", (e) => this.selectAnswer(e));
     });
 };
 
-/* add functions to determine if answers are correct */
+/* Add functions to determine if answers are correct */
 Quiz.prototype.resetState = function() {
     this.nextButton.style.display = 'none';
 
@@ -145,7 +144,7 @@ Quiz.prototype.selectAnswer = function(e) {
     this.nextButton.style.display = 'block';
 };
 
-/* function to display score at the end of quiz and to restart quiz */
+/* Function to display score at the end of quiz and to restart quiz */
 Quiz.prototype.showScore = function() {
     this.resetState();
     this.questionElement.innerHTML = `YOU SCORED ${this.score} OUT OF ${this.randomQuizQuestions.length}!`;
@@ -165,7 +164,7 @@ Quiz.prototype.handleNextButton = function() {
     }
 };
 
-/*define function to pull json data*/
+/* Define function to pull json data*/
 function fetchJSONData() {
     fetch('assets/questions.json')
         .then((res) => {
