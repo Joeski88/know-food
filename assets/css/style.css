@@ -366,7 +366,7 @@ h3, .question {
 @media screen and (min-width: 600px) {
 
     .app {
-        max-height: 400px;
+        max-height: 350px;
     }    
 }
    
